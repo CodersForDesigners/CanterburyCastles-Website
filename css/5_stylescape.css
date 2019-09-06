@@ -33,13 +33,19 @@
 :root {
 	--light : #FFFFFF;
 	--off-light : #F2F2F2;
-	--neutral : #95A2A6;
+	--neutral : #B5B5B5;
 	--off-neutral : #D5E0E3;
 	--dark : #011126;
 	--off-dark : #626D73;
 	--black : #1D2225;
 
-	--yellow : #FFEB3B;
+	--yellow-high : #FFEB3B;
+
+	--green : #88A61B;
+	--off-green : #49A52B;
+	--yellow : #F9C73B;
+	--red : #D64047;
+	--magenta : #A271CE;
 
 	--container-width: 300px;
 	--space-min : 10px;
@@ -72,13 +78,13 @@
 
 ::-moz-selection {
 	color: var(--dark);
-	background: var(--yellow);
+	background: var(--yellow-high);
 	text-shadow: none;
 }
 
 ::selection {
 	color: var(--dark);
-	background: var(--yellow);
+	background: var(--yellow-high);
 	text-shadow: none;
 }
 
@@ -154,33 +160,33 @@ a * { pointer-events: none; }
 	letter-spacing: 0.1rem;
 }
 
-.h1 { font-size: 4.2rem; }
-.h2 { font-size: 3.2rem; }
-.h3 { font-size: 2.6rem; }
+.h1 { font-size: 3.6rem; }
+.h2 { font-size: 2.5rem; }
+.h3 { font-size: 2.4rem; }
 .h4 { font-size: 2.0rem; }
-.h5 { font-size: 1.6rem; }
-.h6 { font-size: 1.4rem; }
-.p 	{ font-size: 1.4rem; }
+.h5 { font-size: 1.8rem; }
+.h6 { font-size: 1.5rem; }
+.p 	{ font-size: 1.5rem; }
 .small { font-size: 0.9rem; }
 .label { font-size: 1.1rem; }
 
 @media( min-width: 640px )  {
-	.h1 { font-size: 8.4rem; }
-	.h2 { font-size: 6.0rem; }
-	.h3 { font-size: 3.6rem; }
-	.h4 { font-size: 2.4rem; }
+	.h1 { font-size: 4.0rem; }
+	.h2 { font-size: 3.0rem; }
+	.h3 { font-size: 2.4rem; }
+	.h4 { font-size: 2.2rem; }
 	.h5 { font-size: 1.8rem; }
-	.h6 { font-size: 1.4rem; }
-	.p 	{ font-size: 1.4rem; }
+	.h6 { font-size: 1.5rem; }
+	.p 	{ font-size: 1.5rem; }
 	.small { font-size: 0.9rem; }
 	.label { font-size: 1.1rem; }
 }
 
 @media( min-width: 1040px ) {
-	.h1 { font-size: 9.6rem; }
-	.h2 { font-size: 6.0rem; }
-	.h3 { font-size: 3.6rem; }
-	.h4 { font-size: 2.4rem; }
+	.h1 { font-size: 6.4rem; }
+	.h2 { font-size: 3.6rem; }
+	.h3 { font-size: 2.4rem; }
+	.h4 { font-size: 2.2rem; }
 	.h5 { font-size: 1.8rem; }
 	.h6 { font-size: 1.5rem; }
 	.p 	{ font-size: 1.5rem; }
@@ -189,11 +195,11 @@ a * { pointer-events: none; }
 }
 
 @media( min-width: 1480px ) {
-	.h1 { font-size: 13.0rem; }
-	.h2 { font-size: 9.1rem;  }
-	.h3 { font-size: 5.2rem;  }
-	.h4 { font-size: 3.2rem;  }
-	.h5 { font-size: 2.6rem;  }
+	.h1 { font-size: 9.6rem; }
+	.h2 { font-size: 4.4rem;  }
+	.h3 { font-size: 3.2rem;  }
+	.h4 { font-size: 2.8rem;  }
+	.h5 { font-size: 2.2rem;  }
 	.h6 { font-size: 1.8rem;  }
 	.p 	{ font-size: 1.8rem;  }
 	.small { font-size: 1.3rem; }

@@ -15,15 +15,15 @@
 
 
 body.host .intro-section .title {
-	color: #A271CE;
+	color: var(--magenta);
 }
 
 body.host .contact-section .contact-card {
-	background-color: #A271CE;
+	background-color: var(--magenta);
 }
 
 body.host .contact-section .or span {
-	background-color: #A271CE;
+	background-color: var(--magenta);
 }
 
 

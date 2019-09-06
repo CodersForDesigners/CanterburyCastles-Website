@@ -73,7 +73,7 @@ body.modal_freeze .page {
 	font-family: 'Arial', sans-serif;
 	font-size: 25px;
 	line-height: 25px;
-	color: #011126;
+	color: var(--dark);
 }
 
 .modal_content a {
@@ -112,7 +112,7 @@ body.modal_freeze .page {
 }
 
 .modal_window.contact .modal_content .highlight-line {
-	background-color: #011126;
+	background-color: var(--dark);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }

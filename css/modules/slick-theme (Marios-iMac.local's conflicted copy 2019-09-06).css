@@ -75,7 +75,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	background-color: var(--dark);
+	background-color: #011126;
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -91,7 +91,7 @@
 {
 	/*content: '←';*/
 	content: '';
-	background-image: url('/img/gallery/prev.svg?v=9');
+	background-image: url('/media/gallery/prev.svg?ver=07092019');
 }
 
 .slick-next
@@ -103,7 +103,7 @@
 {
 	/*content: '→';*/
 	content: '';
-	background-image: url('/img/gallery/next.svg?v=9');
+	background-image: url('/media/gallery/next.svg?ver=07092019');
 }
 
 
@@ -175,7 +175,7 @@
 	bottom: 0;
 
 	opacity: .4;
-	background-color: var(--dark);
+	background-color: #011126;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

@@ -15,15 +15,15 @@
 
 
 body.book .intro-section .title {
-	color: var(--red);
+	color: #D64047;
 }
 
 body.book .contact-section .contact-card {
-	background-color: var(--red);
+	background-color: #D64047;
 }
 
 body.book .contact-section .or span {
-	background-color: var(--red);
+	background-color: #D64047;
 }
 
 
@@ -35,7 +35,7 @@ body.book .contact-section .or span {
 	/*padding-bottom: 8rem;*/
 	padding-bottom: 15rem;
 	color: #FFFFFF;
-	background-color: var(--dark);
+	background-color: #011126;
 }
 
 .getaway-section .highlight-line {
@@ -79,20 +79,20 @@ body.book .contact-section .or span {
 }
 
 .weekend-video-section .video-overlay {
-	background: linear-gradient( -165deg, rgba(214,64,71,0.35), var(--red) 75%);
+	background: linear-gradient( -165deg, rgba(214,64,71,0.35), #D64047 75%);
 }
 
 @media ( max-width: 1040px ) {
 	.weekend-video-section {
 		padding-top: 50%;
-		background-image: url('/video/video-thumb-3.jpg?v=9');
+		background-image: url('/video/video-thumb-3.jpg?ver=07092019');
 	}
 }
 
 @media ( max-width: 640px ) {
 	.weekend-video-section {
 		padding-top: 75%;
-		background-image: url('/video/video-thumb-3.jpg?v=9');
+		background-image: url('/video/video-thumb-3.jpg?ver=07092019');
 	}
 }
 
