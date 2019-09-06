@@ -1,0 +1,539 @@
+
+/*
+ * Buy
+ */
+
+
+@media ( max-width: 1040px ) {
+}
+
+@media ( max-width: 640px )  {
+}
+
+@media ( max-width: 400px )  {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- intro section -- */
+
+.intro-section {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.intro-section .title {
+	color: #88A61B;
+	text-align: right;
+}
+
+.intro-section .description {
+	line-height: 1.9;
+}
+
+.intro-section .highlight-line {
+	margin-top: 3.5rem;
+	margin-bottom: 4rem;
+}
+
+@media ( max-width: 1040px ) {
+	.intro-section {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+
+	.intro-section .highlight-line {
+		margin-top: 2.5rem;
+		margin-bottom: 3rem;
+	}
+}
+
+@media ( max-width: 640px )  {
+	.intro-section {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	.intro-section .highlight-line {
+		margin: 2.5rem auto;
+	}
+
+	.intro-section .title,
+	.intro-section .description { text-align: center; }
+}
+
+
+
+
+
+
+
+
+
+/* -- landscape video section -- */
+
+.landscape-video-section {
+	position: relative;
+	font-size: 0;
+	z-index: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.landscape-video-section .video-overlay {
+	background: linear-gradient( 165deg, rgba(136,166,27,0.35), #88A61B 75%);
+}
+
+@media ( max-width: 1040px ) {
+	.landscape-video-section {
+		padding-top: 50%;
+		background-image: url('/video/video-thumb-1.jpg?ver=07092019');
+	}
+}
+
+@media ( max-width: 640px ) {
+	.landscape-video-section {
+		padding-top: 75%;
+		background-image: url('/video/video-thumb-1.jpg?ver=07092019');
+	}
+}
+
+
+
+/* -- aerial video section -- */
+
+.aerial-video-section {
+	position: relative;
+	font-size: 0;
+	z-index: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.aerial-video-section .video-overlay {
+	background: linear-gradient( -165deg, rgba(136,166,27,0.35), #88A61B 75%);
+}
+
+@media ( max-width: 1040px ) {
+	.aerial-video-section {
+		padding-top: 50%;
+		background-image: url('/video/video-thumb-2.jpg?ver=07092019');
+	}
+}
+
+@media ( max-width: 640px ) {
+	.aerial-video-section {
+		padding-top: 75%;
+		background-image: url('/video/video-thumb-2.jpg?ver=07092019');
+	}
+}
+
+
+
+
+
+
+
+
+/* -- investment section -- */
+
+.investment-section {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	color: #FFFFFF;
+	background-color: #011126;
+}
+
+.investment-section .column {
+	text-align: right;
+}
+
+.investment-section .highlight-line {
+	display: inline-block;
+	margin: 2rem 0;
+}
+
+.investment-section .description {
+	line-height: 1.9;
+}
+
+@media ( max-width: 1040px ) {
+	.investment-section {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+
+	.investment-section .column {
+		text-align: left;
+	}
+
+	.investment-section .investment-video {
+		margin-top: 4rem;
+	}
+}
+
+@media ( max-width: 640px ) {
+	.investment-section {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+}
+
+
+
+
+
+
+
+
+/* -- location section -- */
+
+.location-section {
+	background-color: #F9C73B;
+	font-size: 0;
+}
+
+.location-section .location-map {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	font-size: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-image: url( '/media/location-map.jpg?ver=07092019' );
+}
+
+.location-section .location-content {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.location-section .location-content .title {
+	text-align: right;
+}
+
+.location-section .location-content .highlight-line {
+	display: inline-block;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.location-section .location-content ul {
+	margin: 0;
+}
+
+.location-section .location-content li {
+	list-style-position: outside;
+    list-style-type: square;
+    margin-bottom: 1.5rem;
+}
+
+.location-section .location-content li:last-child { margin-bottom: 0; }
+
+.location-section .location-content .button {
+	margin-top: 1.5rem;
+}
+
+@media( max-width: 1440px ){
+	.location-section .location-map {
+		padding-top: 56.25%;
+		background-image: url( '/media/location-map-laptop.jpg?ver=07092019' );
+	}
+}
+
+@media( max-width: 1040px ){
+	.location-section .location-map {
+		padding-top: 71.5%;
+		background-image: url( '/media/location-map-ipad.jpg?ver=07092019' );
+	}
+
+	.location-section .location-content {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+}
+
+@media( max-width: 640px ){
+
+	.location-section .location-map { display: none; }
+
+	.location-section .location-content {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	.location-section .location-content .title {
+		text-align: left;
+	}
+
+	.location-section .location-content li {
+		list-style: none;
+	}
+}
+
+
+
+
+
+
+
+/* -- gallery section -- */
+
+.gallery-section {
+	color: #FFFFFF;
+	padding-bottom: 7rem;
+	background-color: #88A61B;
+}
+
+.gallery-section .title {
+	margin-top: 6rem;
+}
+
+.gallery-section .slick_gallery { display: block; }
+
+.gallery-section .slick_gallery_mobile,
+.gallery-section .slick_gallery_mobile img { display: none; }
+
+.gallery-section .gallery {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+
+@media ( max-width: 1040px ){
+	.gallery-section {
+		/*padding-top: 10rem;*/
+		padding-bottom: 6rem;
+	}
+
+	.gallery-section .title {
+		margin-top: 5rem;
+	}
+}
+
+@media ( max-width: 640px ){
+
+	.gallery-section {
+		padding-bottom: 4rem;
+	}
+
+	.gallery-section .title {
+		margin-top: 4rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.gallery-section .slick_gallery { display: none; }
+
+	.gallery-section .slick_gallery_mobile { display: block; }
+	.gallery-section .slick_gallery_mobile img { display: inline-block; }
+
+}
+
+
+
+
+
+
+
+
+
+/* -- testimonials section -- */
+
+.testimonials-section {
+	padding-top: 8rem;
+	background-color: #efeada;
+}
+
+.testimonials-section .testimonial {
+	margin-bottom: 8rem;
+}
+
+.testimonials-section .title {
+	text-align: right;
+	color: #88A61B;
+}
+
+.testimonials-section .person-name {
+	color: #88A61B;
+}
+
+/* -- Slick Testimonaial -- */
+.slick_testimonial {
+	margin-bottom: 3rem;
+	padding-bottom: 2rem;
+}
+
+.slick_testimonial .tes {
+	possition: relative;
+	width: 50vw;
+	max-width: 690px;
+	margin-right: 8.33333vw;
+}
+
+.slick_testimonial.mobile {
+	display: none;
+}
+
+@media ( max-width: 1040px ) {
+	.testimonials-section {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+
+	.testimonials-section .testimonial {
+		margin-bottom: 0;
+	}
+
+	.testimonials-section .title {
+		text-align: left;
+	}
+
+	.testimonials-section .testimonial-video {
+		margin-top: 6rem;
+		margin-bottom: 1rem;
+	}
+
+	.slick_testimonial {
+		margin-bottom: 0;
+		padding-bottom: 12rem;
+	}
+}
+
+@media ( max-width: 640px )  {
+	.testimonials-section {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+
+	.testimonials-section .testimonial-video {
+		margin-top: 4rem;
+		margin-bottom: 1rem;
+	}
+
+	.slick_testimonial {
+		display: none;
+		margin-bottom: 0;
+		padding-bottom: 9rem;
+	}
+
+	.slick_testimonial .tes {
+		width: 83.33333vw;
+	}
+
+	.slick_testimonial.mobile {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+/* -- aerial section -- */
+
+.aerial-section {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	color: #FFFFFF;
+	background-color: #011126;
+}
+
+.aerial-section .highlight-line {
+	display: inline-block;
+	margin: 2rem 0;
+}
+
+.aerial-section .description {
+	line-height: 1.9;
+}
+
+
+@media ( max-width: 1040px ) {
+	.aerial-section {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+
+	.aerial-section .aerial-video {
+		margin-bottom: 4rem;
+	}
+}
+
+@media ( max-width: 640px ) {
+	.aerial-section {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+}
+
+
+
+
+
+
+
+
+/* -- masterplan section -- */
+
+.masterplan-section {
+	font-size: 0;
+}
+
+.masterplan-section .masterplan {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	padding-top: 61%;
+	font-size: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url( '/media/masterplan.jpg?ver=07092019' );
+}
+
+@media( max-width: 1440px ){
+	.masterplan-section .masterplan {
+		padding-top: 64%;
+		background-image: url( '/media/masterplan-laptop.jpg?ver=07092019' );
+	}
+}
+
+@media ( max-width: 1040px ) {
+	.masterplan-section .masterplan {
+		padding-top: 89%;
+		background-image: url( '/media/masterplan-ipad.jpg?ver=07092019' );
+	}
+}
+
+@media ( max-width: 640px ) {
+	.masterplan-section .masterplan {
+		padding-top: 100%;
+		background-image: url( '/media/masterplan-mobile.jpg?ver=07092019' );
+	}
+}
+
+
+
+
+
+
+

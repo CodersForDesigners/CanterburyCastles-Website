@@ -1,0 +1,114 @@
+/* -- Contact Section -- */
+
+.contact-section {
+	position: relative;
+	background-color: #FFFFFF;
+	z-index: 1;
+}
+
+.contact-section .contact-card {
+	position: relative;
+	padding: 6.5%;
+	margin-top: -7rem;
+	margin-bottom: -7rem;
+	/*min-height: 600px;*/
+	color: #FFFFFF;
+	background-color: #88A61B;
+	z-index: 2;
+}
+
+.contact-section .contact-card .title {
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+}
+
+.contact-section .contact-card .phone {
+	display: block;
+	white-space: nowrap;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.contact-section .contact-card .or {
+	display: block;
+	width: 50%;
+	margin: 3rem auto;
+	font-size: 2rem;
+	line-height: 1;
+	background-image: url( '/media/dot-white.jpg?ver=07092019' );
+	background-repeat: repeat-x;
+	background-position: center center;
+}
+
+.contact-section .contact-card .or span {
+	display: inline-block;
+	padding: 0 1.5rem;
+	background-color: #88A61B;
+}
+
+.contact-section .contact-card .button.facebook {
+	margin-top: 5rem;
+}
+
+/*.contact-section .contact-card .form-row {
+	margin: 0 auto;
+	width: 58.33333%;
+}
+*/
+/*.contact-section .contact-card .form-row input[type="submit"] {
+	margin-top: 4rem;
+	width: 50%;
+}*/
+
+
+@media ( max-width: 1040px ) {
+	.contact-section .contact-card {
+		padding: 4.166665%;
+		margin-top: -4rem;
+		margin-bottom: -4rem;
+	}
+
+	.contact-section .contact-card .phone {
+		font-size: 3.6rem;
+	}
+
+	/*.contact-section .contact-card .form-row {
+		width: 66.66667%;
+	}
+
+	.contact-section .contact-card .form-row input[type="submit"] {
+		width: 66.66667%;
+	}*/
+
+	.contact-section .contact-card .or {
+		margin: 2rem auto;
+	}
+
+	.contact-section .contact-card .button.facebook {
+		margin-top: 3rem;
+	}
+}
+
+@media ( max-width: 640px ) {
+	.contact-section .contact-card {
+		padding: 8.33333%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.contact-section .contact-card .phone {
+		font-size: 3.0rem;
+	}
+
+	/*.contact-section .contact-card .form-row {
+		width: 83.33333%;
+	}*/
+
+	.contact-section .contact-card .or {
+		margin: 3rem auto;
+	}
+
+	.contact-section .contact-card .button.facebook {
+		margin-top: 3rem;
+	}
+}

@@ -1,0 +1,13 @@
+/*
+ * A container placed inside <body> to precached images
+ * in a specific order, if required.
+ */
+
+img.precache {
+	display: visible;
+	margin: 0;
+	padding: 0;
+	width: 0 !important;
+	height: 0 !important;
+	border: none;
+}

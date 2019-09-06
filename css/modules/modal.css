@@ -1,0 +1,128 @@
+
+.page {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+.modal_freeze {
+	position: relative;
+}
+
+.modal_window {
+	z-index: 2;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+	background-color: rgba(1,17,38,0.8);
+}
+
+.modal_window.show { display: flex; }
+
+.modal_fire { cursor: pointer; }
+
+body.modal_freeze .page {
+	overflow: hidden;
+	max-height: 100vh;
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.modal_content {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	padding: 0.5rem;
+	width: 300px;
+}
+
+.modal_item { position: relative; z-index: 1; }
+
+.modal_close {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	z-index: 2;
+	top: 15px;
+	right: 15px;
+	width: 25px;
+	height: 25px;
+	font-size: 0;
+	text-align: center;
+	background-color: rgba(256,256,256,0.6);
+}
+
+.modal_close:after {
+	content: '\d7';
+	position: absolute;
+	top: -2rem;
+	left: -2rem;
+	right: -2rem;
+	bottom: -2rem;
+	border: 2rem solid transparent;
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	font-size: 25px;
+	line-height: 25px;
+	color: #011126;
+}
+
+.modal_content a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'Arial', sans-serif;
+}
+
+
+.modal_window.facebook {
+	background-color: rgba(1,17,38,0.9);
+}
+
+.modal_window.facebook .modal_content {
+	background-color: #FFFFFF;
+}
+
+.modal_window.facebook .modal_content blockquote {
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+.modal_window.contact {
+	background-color: rgba(1,17,38,0.9);
+}
+
+.modal_window.contact .modal_content {
+	padding: 15px;
+	background-color: #FFFFFF;
+}
+
+.modal_window.contact .modal_content .title {
+	font-size: 2rem;
+	line-height: 1;
+
+}
+
+.modal_window.contact .modal_content .highlight-line {
+	background-color: #011126;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.modal_window.contact .modal_content input[type="submit"] {
+	margin-top: 2rem;
+}
+
+
+
+
+
+

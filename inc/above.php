@@ -39,7 +39,60 @@ http_response_code( 200 );
 
 	<div id="page-wrapper"><!-- Page Wrapper -->
 
-		<?php require_once 'navigation.php'; ?>
+		<?php //require_once 'navigation.php'; ?>
 
 		<!-- Page Content -->
 		<div id="page-content">
+			<!-- Landing Section -->
+			<section class="landing-section">
+
+				<!-- landing image -->
+				<div class="landing-image"></div>
+
+				<!-- landing text overlay -->
+				<div class="landing wipe_out">
+					<div class="container row">
+						<div class="column medium-8 medium-offset-2 small-10 small-offset-1">
+							<img class="logo" width="210" src="/media/logo-medium.svg<?php echo $ver?>">
+							<div class="title h1">
+								<div class="wipe_line"><div class="wipe wipe_bottom">A weekend</div></div><br>
+								<div class="wipe_line"><div class="wipe wipe_bottom">home</div></div><br>
+								<div class="wipe_line"><div class="wipe wipe_bottom">destination</div></div>
+							</div>
+							<div class="description label">
+								<div class="wipe_line"><div class="wipe wipe_left">Just a 40 minute drive from Bangalore, India</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><!-- End: Landing Section -->
+
+			<!-- Navigation Section -->
+			<section class="navigation-section row">
+				<img class="logo-mobile" src="/media/logo-small.svg<?php echo $ver?>">
+				<div class="menu-button js_menu_button">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+				<div class="container row">
+					<div class="navigation column large-8 large-offset-2 medium-10 medium-offset-1 small-12 js_navigation_box">
+						<a class="nav-button h2 js_nav_button ga_nav_button" data-page-id="buy" href="/buy">
+							Buy
+							<div class="label">A Plot</div>
+						</a>
+						<a class="nav-button h2 js_nav_button ga_nav_button" data-page-id="build" href="/build">
+							Build
+							<div class="label">A Villa</div>
+						</a>
+						<a class="nav-button h2 js_nav_button ga_nav_button" data-page-id="book" href="/book">
+							Book
+							<div class="label">A Weekend Getaway</div>
+						</a>
+						<a class="nav-button h2 js_nav_button ga_nav_button" data-page-id="host" href="/host">
+							Host
+							<div class="label">An Event</div>
+						</a>
+					</div>
+				</div>
+			</section><!-- End: Navigation Section -->

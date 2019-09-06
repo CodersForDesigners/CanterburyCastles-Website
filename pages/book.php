@@ -1,0 +1,143 @@
+<?php
+/*
+ *
+ * This is a sample page you can copy and use as boilerplate for any new page.
+ *
+ */
+require_once __DIR__ . '/../inc/above.php';
+
+// Page-specific preparatory code goes here.
+
+?>
+
+
+
+
+
+<!-- intro section -->
+<section class="intro-section">
+	<div class="container">
+		<div class="row">
+			<div class="column large-4 large-offset-2 medium-4 medium-offset-2 small-10 small-offset-1">
+				<div class="title h2 ga_scroll_track">
+				Spend the weekend at Canterbury with your family.
+				</div>
+ 			</div>
+			<div class="column large-3 large-offset-1 medium-4 medium-offset-1 small-10 small-offset-1">
+				<div class="description h6">
+				<div class="highlight-line"></div>
+				Or gather a bunch of friends, the kids, jump into your cars, it's just a 40 minute drive.
+				</div>
+			</div>
+		</div>
+		<div class="row checklist-row">
+			<div class="column large-4 large-offset-2 medium-4 medium-offset-2 small-10 small-offset-1">
+				<div class="checklist js_reveal">
+					<div class="list-item"><span class="checkbox"></span>food &amp; beverage</div>
+					<div class="list-item"><span class="checkbox"></span>entertainment</div>
+					<div class="list-item"><span class="checkbox"></span>bonfire</div>
+					<div class="list-item"><span class="checkbox"></span>swimming pool</div>
+					<div class="list-item"><span class="checkbox"></span>pitch a tent</div>
+					<div class="list-item"><span class="checkbox"></span>rent a villa</div>
+					<!-- <div class="list-item"><span class="checkbox"></span>scratch your back</div> -->
+				</div>
+			</div>
+			<div class="column large-3 large-offset-1 medium-4 medium-offset-1 small-10 small-offset-1">
+				<div class="essentials h2">
+					Our team will take care of the essentials.
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- weekend video section -->
+<section class="weekend-video-section">
+	<video class="section-video" autoplay loop>
+		<source src="/video/video-3.mp4<?php echo $ver?>" type="video/mp4">
+	</video>
+	<div class="video-overlay">
+		<div class="container video-overlay-flex row">
+			<!-- <span class="caption h2 column large-5 large-offset-5 medium-6 medium-offset-3 small-10 small-offset-1 text-right">Leave the city behind,<br> your job is to have fun.</span> -->
+			<span class="caption h2 column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">Leave the city behind,<br> and leave the rest to us.</span>
+		</div>
+	</div>
+</section>
+
+
+<!-- getaway section -->
+<section class="getaway-section">
+	<div class="container row">
+		<div class="column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
+			<!-- video -->
+			<div class="getaway-video">
+				<!-- <img src="/media/thumb-getaway.png<?php echo $ver?>"> -->
+				<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/-Qj7pE64M_0?rel=0&amp;showinfo=0" data-ga-video-src="Aerial - Video">
+					<div class="youtube_load"></div>
+					<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
+			<div class="title h2">
+				<!-- Entice your friends to join you. Share this video invitation. -->
+				Entice your friends with the promise of a fun weekend.
+			</div>
+			<div class="description h6">
+				<div class="highlight-line"></div>
+				<!-- <div class="social-buttons">
+					<a href=""><img src="/media/social-facebook.svg<?php echo $ver?>"></a>
+					<a href=""><img src="/media/social-twitter.svg<?php echo $ver?>"></a>
+					<a href=""><img src="/media/social-google.svg<?php echo $ver?>"></a>
+				</div> -->
+				<div>
+					Watch this space for more.
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- contact section -->
+<section class="contact-section">
+	<div class="container row">
+
+		<div id="contact" class="contact-card column large-6 large-offset-3 medium-8 medium-offset-2 small-12 text-center">
+			<div class="title h5">Book a Weekend Now</div>
+			<a href="tel:9845077177" class="phone h2 block">Call +91 98450 77177</a>
+
+
+			<div class="button facebook button-secondary block modal_fire ga_facebook_form" data-mod-id="facebook">Chat with us on Facebook</div>
+			<div class="or"><span>OR</span></div>
+			<div class="button contact block modal_fire ga_get_in_touch_form" data-mod-id="contact">Help us get in touch</div>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- Modal JS -->
+<script type="text/javascript" src="/js/modules/modal.js<?php echo $ver?>"></script>
+
+
+
+
+
+<?php require_once __DIR__ . '/../inc/below.php'; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

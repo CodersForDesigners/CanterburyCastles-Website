@@ -14,8 +14,8 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 
-<!-- Sample Page Content -->
-<section class="intro-section">
+<!-- Sample Section -->
+<section class="sample-section">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12">
@@ -25,7 +25,7 @@ require_once __DIR__ . '/../inc/above.php';
 		</div>
 	</div>
 </section>
-<!-- END: Sample Page Content -->
+<!-- END: Sample Section -->
 
 
 

@@ -31,7 +31,7 @@ else
  * Get the title and URL of the website and current page
  */
 // $siteUrl = getSiteUrl();
-$siteTitle = getContent( 'Brownie As Fudge', 'site_title' );
+$siteTitle = getContent( 'Canterbury Castles | A Weekend Home Destination', 'site_title' );
 $pageUrl = $siteUrl . $urlPath;
 $pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 
@@ -57,9 +57,9 @@ $pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 	- -->
 	<!-- Short description of the document (limit to 150 characters) -->
 	<!-- This content *may* be used as a part of search engine results. -->
-	<meta name="description" content="<?php echo getContent( '', 'description' ); ?>">
+	<meta name="description" content="<?php echo getContent( 'Buy a Plot, Build a Villa, Book a Weekend Getaway or Host an Event. Just 40 minute drive from Bangalore City.', 'description' ); ?>">
 	<!-- Short description of your document's subject -->
-	<meta name="subject" content="<?php echo getContent( '', 'subject' ); ?>">
+	<meta name="subject" content="<?php echo getContent( 'Canterbury Castles | A Weekend Home Destination', 'subject' ); ?>">
 
 
 	<!--
@@ -90,7 +90,7 @@ $pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 	*
 	- -->
 	<!-- Theme Color for Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="<?php echo getContent( '#f9f9f9', 'theme_color' ); ?>">
+	<meta name="theme-color" content="<?php echo getContent( '#011126', 'theme_color' ); ?>">
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="57x57" href="media/favicon/apple-icon-57x57.png">
@@ -107,7 +107,7 @@ $pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 	<link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
 	<link rel="manifest" href="media/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#444444">
+	<meta name="msapplication-TileColor" content="#011126">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 
 
@@ -138,15 +138,15 @@ $pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 	<meta property="og:url" content="<?php echo $pageUrl ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="<?php echo $pageTitle ?>">
-	<meta property="og:image" content="<?php echo getContent( '', 'og -> image' ) ?>">
-	<meta property="og:description" content="<?php echo getContent( '', 'og -> description' ) ?>">
+	<meta property="og:image" content="<?php echo getContent( 'http://canterburycastles.com/download/og-cover-image.png' . $ver, 'og -> image' ) ?>">
+	<meta property="og:description" content="<?php echo getContent( 'Buy a Plot, Build a Villa, Book a Weekend Getaway or Host an Event. Just 40 minute drive from Bangalore City.', 'og -> description' ) ?>">
 	<meta property="og:site_name" content="<?php echo getContent( '', 'site_title' ) ?>">
 
 
 	<!-- Schema.org / Google+ -->
 	<meta itemprop="name" content="<?php echo $pageTitle ?>">
-	<meta itemprop="description" content="<?php echo getContent( 'This is a website', 'schema -> description' ) ?>">
-	<meta itemprop="image" content="<?php echo getContent( '', 'schema -> image' ) ?>">
+	<meta itemprop="description" content="<?php echo getContent( 'Buy a Plot, Build a Villa, Book a Weekend Getaway or Host an Event. Just 40 minute drive from Bangalore City.', 'schema -> description' ) ?>">
+	<meta itemprop="image" content="<?php echo getContent( 'http://canterburycastles.com/download/og-thumbnail-image.png' . $ver , 'schema -> image' ) ?>">
 
 
 	<!--
@@ -169,7 +169,8 @@ $pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 	- -->
 	<?php echo getContent( <<<ARB
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Concert+One|Roboto:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display:400,400i,700"
+	rel="stylesheet">
 	<!-- Icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ARB
@@ -180,8 +181,33 @@ ARB
 		/*
 		 * Arbitrary Code ( Bottom of Head )
 		 */
-		echo getContent( '', 'arbitrary_code_head_bottom' );
-	?>
+		echo getContent( <<<ARB
+		<!-- Lazaro : Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-57124254-8', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<!-- End Lazaro : Google Analytics -->
+
+		<!-- Hotjar Tracking Code for http://www.canterburycastles.com/ -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:248224,hjsv:5};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+		<!-- End Hotjar Tracking Code for http://www.canterburycastles.com/ -->
+ARB
+, 'arbitrary_code_head_bottom' ); ?>
 
 
 </head>

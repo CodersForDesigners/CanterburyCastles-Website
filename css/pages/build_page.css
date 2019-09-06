@@ -1,0 +1,47 @@
+
+/*
+ * Build
+ */
+
+
+@media ( max-width: 1040px ) {
+}
+
+@media ( max-width: 640px )  {
+}
+
+@media ( max-width: 400px )  {
+}
+
+
+body.build .intro-section .title {
+	color: #88A61C;
+}
+
+body.build .contact-section .contact-card {
+	background-color: #88A61C;
+}
+
+body.build .contact-section .or span {
+	background-color: #88A61C;
+}
+
+
+body.build .intro-section {
+	padding-bottom: 15rem;
+}
+
+@media ( max-width: 1040px ) {
+	body.build .intro-section {
+		padding-bottom: 10rem;
+	}
+}
+
+@media ( max-width: 640px )  {
+	body.build .intro-section {
+		padding-bottom: 4rem;
+	}
+}
+
+
+
