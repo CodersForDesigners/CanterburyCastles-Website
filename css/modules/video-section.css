@@ -18,7 +18,7 @@
 	width: 100%;
 	height: auto;
 
-	color: #FFFFFF;
+	color: var(--light);
 	background-color: rgba(1,17,38,0.5);
 
 	-ms-box-orient: horizontal;
@@ -34,7 +34,7 @@
 }
 
 .video-overlay .caption {
-	color: #FFFFFF;
+	color: var(--light);
 	line-height: 1.4;
 	margin-bottom: 5%;
 }

@@ -2,7 +2,7 @@
 
 .contact-section {
 	position: relative;
-	background-color: #FFFFFF;
+	background-color: var(--light);
 	z-index: 1;
 }
 
@@ -12,7 +12,7 @@
 	margin-top: -7rem;
 	margin-bottom: -7rem;
 	/*min-height: 600px;*/
-	color: #FFFFFF;
+	color: var(--light);
 	background-color: var(--green);
 	z-index: 2;
 }
@@ -25,7 +25,7 @@
 .contact-section .contact-card .phone {
 	display: block;
 	white-space: nowrap;
-	color: #FFFFFF;
+	color: var(--light);
 	text-decoration: none;
 }
 
@@ -35,7 +35,7 @@
 	margin: 3rem auto;
 	font-size: 2rem;
 	line-height: 1;
-	background-image: url( '/img/dot-white.jpg?v=9' );
+	background-image: url( '/media/dot-white.jpg?ver=07092019' );
 	background-repeat: repeat-x;
 	background-position: center center;
 }

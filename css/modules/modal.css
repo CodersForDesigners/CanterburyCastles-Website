@@ -77,7 +77,7 @@ body.modal_freeze .page {
 }
 
 .modal_content a {
-	color: #FFFFFF;
+	color: var(--light);
 	text-decoration: none;
 	font-family: 'Arial', sans-serif;
 }
@@ -88,7 +88,7 @@ body.modal_freeze .page {
 }
 
 .modal_window.facebook .modal_content {
-	background-color: #FFFFFF;
+	background-color: var(--light);
 }
 
 .modal_window.facebook .modal_content blockquote {
@@ -102,7 +102,7 @@ body.modal_freeze .page {
 
 .modal_window.contact .modal_content {
 	padding: 15px;
-	background-color: #FFFFFF;
+	background-color: var(--light);
 }
 
 .modal_window.contact .modal_content .title {

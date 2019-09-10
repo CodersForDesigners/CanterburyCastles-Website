@@ -34,7 +34,7 @@ body.book .contact-section .or span {
 	padding-top: 8rem;
 	/*padding-bottom: 8rem;*/
 	padding-bottom: 15rem;
-	color: #FFFFFF;
+	color: var(--light);
 	background-color: var(--dark);
 }
 
@@ -85,14 +85,14 @@ body.book .contact-section .or span {
 @media ( max-width: 1040px ) {
 	.weekend-video-section {
 		padding-top: 50%;
-		background-image: url('/video/video-thumb-3.jpg?v=9');
+		background-image: url('/video/video-thumb-3.jpg?ver=07092019');
 	}
 }
 
 @media ( max-width: 640px ) {
 	.weekend-video-section {
 		padding-top: 75%;
-		background-image: url('/video/video-thumb-3.jpg?v=9');
+		background-image: url('/video/video-thumb-3.jpg?ver=07092019');
 	}
 }
 

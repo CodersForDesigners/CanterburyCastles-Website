@@ -96,14 +96,14 @@
 @media ( max-width: 1040px ) {
 	.landscape-video-section {
 		padding-top: 50%;
-		background-image: url('/video/video-thumb-1.jpg?v=9');
+		background-image: url('/video/video-thumb-1.jpg?ver=07092019');
 	}
 }
 
 @media ( max-width: 640px ) {
 	.landscape-video-section {
 		padding-top: 75%;
-		background-image: url('/video/video-thumb-1.jpg?v=9');
+		background-image: url('/video/video-thumb-1.jpg?ver=07092019');
 	}
 }
 
@@ -126,14 +126,14 @@
 @media ( max-width: 1040px ) {
 	.aerial-video-section {
 		padding-top: 50%;
-		background-image: url('/video/video-thumb-2.jpg?v=9');
+		background-image: url('/video/video-thumb-2.jpg?ver=07092019');
 	}
 }
 
 @media ( max-width: 640px ) {
 	.aerial-video-section {
 		padding-top: 75%;
-		background-image: url('/video/video-thumb-2.jpg?v=9');
+		background-image: url('/video/video-thumb-2.jpg?ver=07092019');
 	}
 }
 
@@ -149,7 +149,7 @@
 .investment-section {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
-	color: #FFFFFF;
+	color: var(--light);
 	background-color: var(--dark);
 }
 
@@ -212,7 +212,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	background-image: url( '/img/location-map.jpg?v=9' );
+	background-image: url( '/media/location-map.jpg?ver=07092019' );
 }
 
 .location-section .location-content {
@@ -249,14 +249,14 @@
 @media( max-width: 1440px ){
 	.location-section .location-map {
 		padding-top: 56.25%;
-		background-image: url( '/img/location-map-laptop.jpg?v=9' );
+		background-image: url( '/media/location-map-laptop.jpg?ver=07092019' );
 	}
 }
 
 @media( max-width: 1040px ){
 	.location-section .location-map {
 		padding-top: 71.5%;
-		background-image: url( '/img/location-map-ipad.jpg?v=9' );
+		background-image: url( '/media/location-map-ipad.jpg?ver=07092019' );
 	}
 
 	.location-section .location-content {
@@ -292,7 +292,7 @@
 /* -- gallery section -- */
 
 .gallery-section {
-	color: #FFFFFF;
+	color: var(--light);
 	padding-bottom: 7rem;
 	background-color: var(--green);
 }
@@ -452,7 +452,7 @@
 .aerial-section {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
-	color: #FFFFFF;
+	color: var(--light);
 	background-color: var(--dark);
 }
 
@@ -507,27 +507,27 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-image: url( '/img/masterplan.jpg?v=9' );
+	background-image: url( '/media/masterplan.jpg?ver=07092019' );
 }
 
 @media( max-width: 1440px ){
 	.masterplan-section .masterplan {
 		padding-top: 64%;
-		background-image: url( '/img/masterplan-laptop.jpg?v=9' );
+		background-image: url( '/media/masterplan-laptop.jpg?ver=07092019' );
 	}
 }
 
 @media ( max-width: 1040px ) {
 	.masterplan-section .masterplan {
 		padding-top: 89%;
-		background-image: url( '/img/masterplan-ipad.jpg?v=9' );
+		background-image: url( '/media/masterplan-ipad.jpg?ver=07092019' );
 	}
 }
 
 @media ( max-width: 640px ) {
 	.masterplan-section .masterplan {
 		padding-top: 100%;
-		background-image: url( '/img/masterplan-mobile.jpg?v=9' );
+		background-image: url( '/media/masterplan-mobile.jpg?ver=07092019' );
 	}
 }
 
