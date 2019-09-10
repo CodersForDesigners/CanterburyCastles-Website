@@ -99,25 +99,6 @@ require_once __DIR__ . '/../inc/above.php';
 	</div>
 </section>
 
-
-<!-- contact section -->
-<section class="contact-section">
-	<div class="container row">
-
-		<div id="contact" class="contact-card column large-6 large-offset-3 medium-8 medium-offset-2 small-12 text-center">
-			<div class="title h5">Book a Weekend Now</div>
-			<a href="tel:9845077177" class="phone h2 block">Call +91 98450 77177</a>
-
-
-			<div class="button facebook button-secondary block modal_fire ga_facebook_form" data-mod-id="facebook">Chat with us on Facebook</div>
-			<div class="or"><span>OR</span></div>
-			<div class="button contact block modal_fire ga_get_in_touch_form" data-mod-id="contact">Help us get in touch</div>
-
-		</div>
-
-	</div>
-</section>
-
 <!-- Modal JS -->
 <script type="text/javascript" src="/js/modules/modal.js<?php echo $ver?>"></script>
 

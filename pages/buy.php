@@ -264,43 +264,6 @@ require_once __DIR__ . '/../inc/above.php';
 	<div class="masterplan"></div>
 </section>
 
-
-<!-- contact section -->
-<section class="contact-section">
-	<div class="container row">
-
-		<div id="contact" class="contact-card fill-dark column large-6 large-offset-3 medium-8 medium-offset-2 small-12 text-center">
-			<div class="title h5">Get in Touch</div>
-			<a href="tel:9845077177" class="phone h2 block">Call +91 98450 77177</a>
-
-			<div class="or"><span>OR</span></div>
-
-			<div class="contact-form">
-				<form class="js_contact_form_general ga_form">
-					<div class="form-row space-min-bottom">
-						<label class="visuallyhidden">Name</label>
-						<input class="form-field input-large block js_name" type="text" placeholder="Name">
-					</div>
-					</div>
-					<div class="form-row space-min-bottom">
-						<label class="visuallyhidden">Email</label>
-						<input class="form-field input-large block js_email" type="email" placeholder="Email">
-					</div>
-					<div class="form-row space-min-bottom">
-						<label class="visuallyhidden">Mobile</label>
-						<input class="form-field input-large block js_phone" type="tel" placeholder="Mobile">
-					<div class="form-row space-quarter-top">
-						<label class="visuallyhidden">Enquire Now</label>
-						<input class="button button-large fill-green block" type="submit" value="Enquire Now">
-					</div>
-				</form>
-			</div>
-
-		</div>
-
-	</div>
-</section>
-
 <!-- Modal JS -->
 <script type="text/javascript" src="/js/modules/modal.js<?php echo $ver?>"></script>
 
