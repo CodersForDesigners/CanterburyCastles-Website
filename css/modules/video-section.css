@@ -8,7 +8,7 @@
 
 .video-overlay {
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	
 	top: 0;
 	left: 0;
@@ -39,6 +39,6 @@
 	margin-bottom: 5%;
 }
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 639px ) {
 	.section-video { display: none; }
 }

@@ -98,7 +98,7 @@ body.host .intro-section .checklist .checkbox:after  { background-color: var(--m
 }
 
 
-@media ( max-width: 640px )  {
+@media ( max-width: 639px )  {
 
 	.intro-section .checklist-row {
 		margin-top: 3rem;

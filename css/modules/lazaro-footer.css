@@ -31,7 +31,7 @@
 		color: #E30F13;
 	}
 
-@media ( max-width: 640px ) {
+@media ( max-width: 639px ) {
 
 	.lazaro-section .lazaro-link {
 		font-size: 0;

@@ -4,10 +4,10 @@
  */
 
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 }
 
-@media ( max-width: 640px )  {
+@media ( max-width: 639px )  {
 }
 
 @media ( max-width: 400px )  {
@@ -48,7 +48,7 @@ body.book .contact-section .or span {
 }
 
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 	.getaway-section {
 		padding-top: 6rem;
 		/*padding-bottom: 6rem;*/
@@ -60,7 +60,7 @@ body.book .contact-section .or span {
 	}
 }
 
-@media ( max-width: 640px ) {
+@media ( max-width: 639px ) {
 	.getaway-section {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
@@ -82,17 +82,10 @@ body.book .contact-section .or span {
 	background: linear-gradient( -165deg, rgba(214,64,71,0.35), var(--red) 75%);
 }
 
-@media ( max-width: 1040px ) {
-	.weekend-video-section {
-		padding-top: 50%;
-		background-image: url('/video/video-thumb-3.jpg?ver=07092019');
-	}
-}
-
-@media ( max-width: 640px ) {
+@media ( max-width: 639px ) {
 	.weekend-video-section {
 		padding-top: 75%;
-		background-image: url('/video/video-thumb-3.jpg?ver=07092019');
+		background-image: url('/media/video-thumb-3.jpg?ver=07092019');
 	}
 }
 

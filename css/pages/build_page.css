@@ -4,10 +4,10 @@
  */
 
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 }
 
-@media ( max-width: 640px )  {
+@media ( max-width: 639px )  {
 }
 
 @media ( max-width: 400px )  {
@@ -31,13 +31,13 @@ body.build .intro-section {
 	padding-bottom: 15rem;
 }
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 	body.build .intro-section {
 		padding-bottom: 10rem;
 	}
 }
 
-@media ( max-width: 640px )  {
+@media ( max-width: 639px )  {
 	body.build .intro-section {
 		padding-bottom: 4rem;
 	}

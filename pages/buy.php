@@ -37,12 +37,13 @@ require_once __DIR__ . '/../inc/above.php';
 
 <!-- landscape video section -->
 <section class="landscape-video-section">
-	<video class="section-video" autoplay loop>
-		<source src="/video/video-1.mp4<?php echo $ver?>" type="video/mp4">
-	</video>
+	<div class="section-video video-embed video-embed-bg js_video_embed js_video_get_player" data-src="6wWQUUrWRgs" data-loop="true" data-autoplay="true" style="padding-top: 33.75%;">
+		<div class="video-embed-placeholder" style="background-image: url( '/media/video-thumb-1.jpg<?php echo $ver; ?>' );"></div>
+		<!-- <div class="video-loading-indicator"></div> -->
+	</div>
 	<div class="video-overlay">
 		<div class="container video-overlay-flex row">
-			<span class="caption h2 column large-5 large-offset-5 medium-6 medium-offset-3 small-10 small-offset-1 text-right">100% clear title, 112 acre<br> BMRDA approved layout</span>
+			<span class="caption h2 column large-5 large-offset-5 medium-6 medium-offset-3 small-10 small-offset-1 text-right">100% clear title, 112 acre BMRDA approved layout</span>
 		</div>
 	</div>
 </section>
@@ -63,10 +64,9 @@ require_once __DIR__ . '/../inc/above.php';
 		<div class="column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 			<!-- video -->
 			<div class="investment-video">
-				<!-- <img src="/media/thumb-investment.png<?php echo $ver?>"> -->
-				<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/kkkDjjT0Ygo?rel=0&amp;showinfo=0" data-ga-video-src="Leslie - Video">
-					<div class="youtube_load"></div>
-					<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
+				<!-- video embed -->
+				<div class="video-embed js_video_embed" data-src="kkkDjjT0Ygo">
+					<div class="video-loading-indicator"></div>
 				</div>
 			</div>
 			<div class="social-buttons text-left">
@@ -92,7 +92,7 @@ require_once __DIR__ . '/../inc/above.php';
 			</div>
 		<div class="column large-3 large-offset-1 medium-4 medium-offset-1 small-10 small-offset-1">
 			<div>
-			<a class="button button-primary ga_open_google_maps" href="https://goo.gl/maps/f92jxfiWFzz" target="_blank">Open in Google Maps</a>
+			<a class="button button-large fill-green ga_open_google_maps" href="https://goo.gl/maps/f92jxfiWFzz" target="_blank">Open in Google Maps</a>
 			</div>
 			<div class="highlight-line"></div>
 			<div class="description h6">
@@ -117,173 +117,42 @@ require_once __DIR__ . '/../inc/above.php';
 		<div class="column large-3 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 			<div class="title h2">Spend a few minutes getting to know your neighbours.</div>
 		</div>
-		<div class="column large-6 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
-			<div class="slick_testimonial">
-				<div class="tes">
-					<div class="testimonial row">
-						<div class="column large-6">
-							<!-- video -->
-							<div class="testimonial-video">
-								<!-- <img src="/media/thumb-testimonial-2.png<?php echo $ver?>"> -->
-								<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/KVeEdgXocQ0?rel=0&amp;showinfo=0" data-ga-video-src="Preetam - Video">
-									<div class="youtube_load"></div>
-									<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-								</div>
+		<div class="column large-7 large-offset-0 medium-6 medium-offset-3 small-10 small-offset-1">
+			<div class="tes">
+				<div class="testimonial row">
+					<div class="column large-6 large-offset-1">
+						<!-- video -->
+						<div class="testimonial-video">
+							<!-- video embed -->
+							<div class="video-embed js_video_embed" data-src="KVeEdgXocQ0">
+								<div class="video-loading-indicator"></div>
 							</div>
-						</div>
-						<div class="column large-4 large-offset-2">
-							<div class="person-name h5">Preetam Daniel</div>
-							<div class="description">"For me, the bigger developers had a problem with valuation, the smaller ones had poor infrastructure. I own 3000sft in Canterbury and it was value for money."</div>
 						</div>
 					</div>
-					<div class="testimonial row">
-						<div class="column large-6">
-							<!-- video -->
-							<div class="testimonial-video">
-								<!-- <img src="/media/thumb-testimonial-1.png<?php echo $ver?>"> -->
-								<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/rNvZ7KYbP4o?rel=0&amp;showinfo=0" data-ga-video-src="Nirmal - Video">
-									<div class="youtube_load"></div>
-									<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-						<div class="column large-4 large-offset-2">
-							<div class="person-name h5">Nirmal Raj</div>
-							<div class="description">"It's easy to acquire property but maintaining it is a big headache. I think this is a good investment because they look after it and protect it."</div>
-						</div>
+					<div class="column large-4 large-offset-1">
+						<div class="person-name h5">Preetam Daniel</div>
+						<div class="description">"For me, the bigger developers had a problem with valuation, the smaller ones had poor infrastructure. I own 3000sft in Canterbury and it was value for money."</div>
 					</div>
 				</div>
-				<?php /*
-				<div class="tes">
-					<div class="testimonial row">
-						<div class="column large-6">
-							<!-- video -->
-							<div class="testimonial-video">
-								<!-- <img src="/media/thumb-testimonial-2.png<?php echo $ver?>"> -->
-								<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/KVeEdgXocQ0?rel=0&amp;showinfo=0" data-ga-video-src="Preetam - Video">
-									<div class="youtube_load"></div>
-									<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-								</div>
+				<div class="testimonial row">
+					<div class="column large-6 large-offset-1">
+						<!-- video -->
+						<div class="testimonial-video">
+							<!-- video embed -->
+							<div class="video-embed js_video_embed" data-src="rNvZ7KYbP4o">
+								<div class="video-loading-indicator"></div>
 							</div>
-						</div>
-						<div class="column large-4 large-offset-2">
-							<div class="person-name h5">Preetam Daniel</div>
-							<div class="description">"For me, the bigger developers had a problem with valuation, the smaller ones had poor infrastructure. I own 3000 sft in Canterbury and it was value for money."</div>
 						</div>
 					</div>
-					<div class="testimonial row">
-						<div class="column large-6">
-							<!-- video -->
-							<div class="testimonial-video">
-								<!-- <img src="/media/thumb-testimonial-1.png<?php echo $ver?>"> -->
-								<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/rNvZ7KYbP4o?rel=0&amp;showinfo=0" data-ga-video-src="Nirmal - Video">
-									<div class="youtube_load"></div>
-									<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-						<div class="column large-4 large-offset-2">
-							<div class="person-name h5">Nirmal Raj</div>
-							<div class="description">"It's easy to acquire property but maintaining it is a big headache. I think this is a good investment because they look after it and protect it."</div>
-						</div>
+					<div class="column large-4 large-offset-1">
+						<div class="person-name h5">Nirmal Raj</div>
+						<div class="description">"It's easy to acquire property but maintaining it is a big headache. I think this is a good investment because they look after it and protect it."</div>
 					</div>
 				</div>
-				*/ ?>
-			</div>
-
-			<div class="slick_testimonial mobile">
-				<div class="tes">
-					<div class="testimonial row">
-						<div class="column large-6">
-							<!-- video -->
-							<div class="testimonial-video">
-								<!-- <img src="/media/thumb-testimonial-2.png<?php echo $ver?>"> -->
-								<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/KVeEdgXocQ0?rel=0&amp;showinfo=0" data-ga-video-src="Preetam - Video">
-									<div class="youtube_load"></div>
-									<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-						<div class="column large-4 large-offset-2">
-							<div class="person-name h5">Preetam Daniel</div>
-							<div class="description">"For me, the bigger developers had a problem with valuation, the smaller ones had poor infrastructure. I own 3000 sft in Canterbury and it was value for money."</div>
-						</div>
-					</div>
-				</div>
-				<div class="tes">
-					<div class="testimonial row">
-						<div class="column large-6">
-							<!-- video -->
-							<div class="testimonial-video">
-								<!-- <img src="/media/thumb-testimonial-1.png<?php echo $ver?>"> -->
-								<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/rNvZ7KYbP4o?rel=0&amp;showinfo=0" data-ga-video-src="Nirmal - Video">
-									<div class="youtube_load"></div>
-									<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-						<div class="column large-4 large-offset-2">
-							<div class="person-name h5">Nirmal Raj</div>
-							<div class="description">"It's easy to acquire property but maintaining it is a big headache. I think this is a good investment because they look after it and protect it."</div>
-						</div>
-					</div>
-				</div>
-				<?php /*
-				<div class="tes">
-					<div class="testimonial row">
-						<div class="column large-6">
-							<!-- video -->
-							<div class="testimonial-video">
-								<!-- <img src="/media/thumb-testimonial-2.png<?php echo $ver?>"> -->
-								<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/KVeEdgXocQ0?rel=0&amp;showinfo=0" data-ga-video-src="Preetam - Video">
-									<div class="youtube_load"></div>
-									<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-						<div class="column large-4 large-offset-2">
-							<div class="person-name h5">Preetam Daniel</div>
-							<div class="description">"For me, the bigger developers had a problem with valuation, the smaller ones had poor infrastructure. I own 3000 sft in Canterbury and it was value for money."</div>
-						</div>
-					</div>
-				</div>
-				<div class="tes">
-					<div class="testimonial row">
-						<div class="column large-6">
-							<!-- video -->
-							<div class="testimonial-video">
-								<!-- <img src="/media/thumb-testimonial-1.png<?php echo $ver?>"> -->
-								<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/rNvZ7KYbP4o?rel=0&amp;showinfo=0" data-ga-video-src="Nirmal - Video">
-									<div class="youtube_load"></div>
-									<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-						<div class="column large-4 large-offset-2">
-							<div class="person-name h5">Nirmal Raj</div>
-							<div class="description">"It's easy to acquire property but maintaining it is a big headache. I think this is a good investment because they look after it and protect it."</div>
-						</div>
-					</div>
-				</div>
-				*/ ?>
 			</div>
 		</div>
 	</div>
 </section>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('.slick_testimonial').slick({
-			dots: true,
-			arrows: false,
-			infinite: true,
-			speed: 300,
-			slidesToShow: 1,
-			centerMode: true,
-			variableWidth: true
-		});
-	});
-</script>
 
 
 <!-- gallery section -->
@@ -358,11 +227,9 @@ require_once __DIR__ . '/../inc/above.php';
 		<div class="column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 			<!-- video -->
 			<div class="aerial-video">
-				<!-- <img src="/media/thumb-aerial.png<?php echo $ver?>"> -->
-				<!-- video -->
-				<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/17v3Bmgavpw?rel=0&amp;showinfo=0" data-ga-video-src="Aerial - Video">
-					<div class="youtube_load"></div>
-					<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
+				<!-- video embed -->
+				<div class="video-embed js_video_embed" data-src="17v3Bmgavpw">
+					<div class="video-loading-indicator"></div>
 				</div>
 			</div>
 		</div>
@@ -381,12 +248,13 @@ require_once __DIR__ . '/../inc/above.php';
 
 <!-- aerial video section -->
 <section class="aerial-video-section">
-	<video class="section-video" autoplay loop>
-		<source src="/video/video-2.mp4<?php echo $ver?>" type="video/mp4">
-	</video>
+	<div class="section-video video-embed video-embed-bg js_video_embed js_video_get_player" data-src="6wWQUUrWRgs" data-loop="true" data-autoplay="true" style="padding-top: 33.75%;">
+		<div class="video-embed-placeholder" style="background-image: url( '/media/video-thumb-2.jpg<?php echo $ver; ?>' );"></div>
+		<!-- <div class="video-loading-indicator"></div> -->
+	</div>
 	<div class="video-overlay">
 		<div class="container row">
-			<span class="caption h2 column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">‘Plug n Play’ ready;<br> Buy, register &amp;<br> build a Villa</span>
+			<span class="caption h2 column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">‘Plug n Play’ ready; Buy, register &amp; build a Villa</span>
 		</div>
 	</div>
 </section>
@@ -401,14 +269,32 @@ require_once __DIR__ . '/../inc/above.php';
 <section class="contact-section">
 	<div class="container row">
 
-		<div id="contact" class="contact-card column large-6 large-offset-3 medium-8 medium-offset-2 small-12 text-center">
-			<div class="title h5">Schedule a Site Visit</div>
+		<div id="contact" class="contact-card fill-dark column large-6 large-offset-3 medium-8 medium-offset-2 small-12 text-center">
+			<div class="title h5">Get in Touch</div>
 			<a href="tel:9845077177" class="phone h2 block">Call +91 98450 77177</a>
 
-
-			<div class="button facebook button-secondary block modal_fire ga_facebook_form" data-mod-id="facebook">Chat with us on Facebook</div>
 			<div class="or"><span>OR</span></div>
-			<div class="button contact block modal_fire ga_get_in_touch_form" data-mod-id="contact">Help us get in touch</div>
+
+			<div class="contact-form">
+				<form class="js_contact_form_general ga_form">
+					<div class="form-row space-min-bottom">
+						<label class="visuallyhidden">Name</label>
+						<input class="form-field input-large block js_name" type="text" placeholder="Name">
+					</div>
+					</div>
+					<div class="form-row space-min-bottom">
+						<label class="visuallyhidden">Email</label>
+						<input class="form-field input-large block js_email" type="email" placeholder="Email">
+					</div>
+					<div class="form-row space-min-bottom">
+						<label class="visuallyhidden">Mobile</label>
+						<input class="form-field input-large block js_phone" type="tel" placeholder="Mobile">
+					<div class="form-row space-quarter-top">
+						<label class="visuallyhidden">Enquire Now</label>
+						<input class="button button-large fill-green block" type="submit" value="Enquire Now">
+					</div>
+				</form>
+			</div>
 
 		</div>
 

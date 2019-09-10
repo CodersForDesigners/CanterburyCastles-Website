@@ -27,7 +27,7 @@
 			<!-- Address Section -->
 			<section class="address-section">
 				<div class="container row">
-					<div class="column large-3 large-offset-3 medium-4 medium-offset-2 small-10 small-offset-1">
+					<div class="column xlarge-3 large-offset-3 medium-4 medium-offset-2 small-12">
 						<img class="logo-address" src="/media/logo-large.svg<?php echo $ver?>">
 						<div class="address">
 							Near Nandi Hills, Melekote Cross, Tubugere Hobli, Doddaballapura Taluk,<br>
@@ -37,7 +37,7 @@
 							+91 93439 41003 -->
 						</div>
 					</div>
-					<div class="column large-3 medium-4 medium-offset-1  small-10 small-offset-1">
+					<div class="column medium-4 medium-offset-1 small-12">
 						<div class="title h5">City Office</div>
 						<div class="address">
 							Bangalore Regency Developers Pvt. Ltd.<br>
@@ -55,7 +55,14 @@
 			<!-- Footer Section -->
 			<section class="footer-section ga_footer_links">
 				<div class="container row">
-					<div class="column large-2 large-offset-3 medium-4 medium-offset-2 small-10 small-offset-1">
+					<div class="column xlarge-5 large-6 large-offset-1 medium-6 small-12">
+						<div class="title h5">The Canterbury Story</div>
+						<!-- video embed -->
+						<div class="video-embed js_video_embed" data-src="kkkDjjT0Ygo">
+							<div class="video-loading-indicator"></div>
+						</div>
+					</div>
+					<div class="column large-2 medium-4 medium-offset-1 small-12">
 						<div class="title h5">Quick Links</div>
 						<!-- Quick Links -->
 						<div class="quick-links">
@@ -67,15 +74,6 @@
 							<a href="/nri" class="link label" data-ga-footer-src="Footer - NRI">NRI corner</a>
 							<a href="#contact" class="link label" data-ga-footer-src="Footer - Contact">Contact Us</a>
 							<a href="/download/masterplan.pdf<?php echo $ver?>" target="_blank" class="link label">PDF Masterplan</a>
-						</div>
-					</div>
-					<div class="column large-4 large-offset-0 medium-4 medium-offset-1 small-10 small-offset-1">
-						<div class="title h5">The Canterbury Story</div>
-						<!-- video -->
-						<!-- <img src="/media/thumb-canterbury-story.png<?php echo $ver?>"> -->
-						<div class="youtube_embed" data-src="https://www.youtube.com/embed/kkkDjjT0Ygo?rel=0&showinfo=0">
-							<div class="youtube_load"></div>
-							<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen data-ga-footer-src="Footer - Leslie"></iframe>
 						</div>
 					</div>
 			</section><!-- End: Footer Section -->
@@ -116,6 +114,9 @@
 	<script type="text/javascript" src="/js/modules/modal_box.js"></script>
 	<script type="text/javascript" src="/js/modules/form.js"></script>
 	<script type="text/javascript" src="/js/modules/disclaimer.js"></script>
+
+	<script type="text/javascript" src="/js/modules/revealer.js"></script>
+	<script type="text/javascript" src="/plugins/slick/slick.js"></script>
 
 	<script type="text/javascript">
 

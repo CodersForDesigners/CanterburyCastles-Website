@@ -12,8 +12,8 @@
 	margin-top: -7rem;
 	margin-bottom: -7rem;
 	/*min-height: 600px;*/
-	color: var(--light);
-	background-color: var(--green);
+	/*color: var(--light);*/
+	/*background-color: var(--green);*/
 	z-index: 2;
 }
 
@@ -43,7 +43,7 @@
 .contact-section .contact-card .or span {
 	display: inline-block;
 	padding: 0 1.5rem;
-	background-color: var(--green);
+	background-color: var(--dark);
 }
 
 .contact-section .contact-card .button.facebook {
@@ -61,7 +61,7 @@
 }*/
 
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 	.contact-section .contact-card {
 		padding: 4.166665%;
 		margin-top: -4rem;
@@ -89,7 +89,7 @@
 	}
 }
 
-@media ( max-width: 640px ) {
+@media ( max-width: 639px ) {
 	.contact-section .contact-card {
 		padding: 8.33333%;
 		margin-top: 0;
