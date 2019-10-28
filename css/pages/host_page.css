@@ -14,32 +14,19 @@
 }
 
 
-body.host .intro-section .title {
-	color: var(--magenta);
-}
 
-body.host .contact-section .contact-card {
-	background-color: var(--magenta);
-}
-
-body.host .contact-section .or span {
-	background-color: var(--magenta);
-}
-
-
-
-body.host .intro-section {
+.host .intro-section {
 	padding-bottom: 15rem;
 }
 
 @media ( max-width: 1039px ) {
-	body.host .intro-section {
+	.host .intro-section {
 		padding-bottom: 10rem;
 	}
 }
 
 @media ( max-width: 639px )  {
-	body.host .intro-section {
+	.host .intro-section {
 		padding-bottom: 4rem;
 	}
 }

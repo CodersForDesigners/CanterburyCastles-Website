@@ -12,46 +12,49 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 
+<!-- Host Page -->
+<div class="host">
 
-
-<!-- intro section -->
-<section class="intro-section">
-	<div class="container">
-		<div class="row">
-			<div class="column large-4 large-offset-2 medium-4 medium-offset-2 small-10 small-offset-1">
-				<div class="title h2 ga_scroll_track">
-				We can adapt the venues at Canterbury to suite a wide variety of events
+	<!-- intro section -->
+	<section class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="column large-4 large-offset-2 medium-4 medium-offset-2 small-10 small-offset-1">
+					<div class="title h2 ga_scroll_track">
+					We can adapt the venues at Canterbury to suite a wide variety of events
+					</div>
+	 			</div>
+				<div class="column large-3 large-offset-1 medium-4 medium-offset-1 small-10 small-offset-1">
+					<div class="description h6">
+					<div class="highlight-line"></div>
+					This terrain will lend special value to an event. The drive here, the backdrop of Nandi Hills, the peace and quiet; they all add up. We are open to brainstorming with you to customise the requirement.
+					</div>
 				</div>
- 			</div>
-			<div class="column large-3 large-offset-1 medium-4 medium-offset-1 small-10 small-offset-1">
-				<div class="description h6">
-				<div class="highlight-line"></div>
-				This terrain will lend special value to an event. The drive here, the backdrop of Nandi Hills, the peace and quiet; they all add up. We are open to brainstorming with you to customise the requirement.
+			</div>
+			<div class="row checklist-row">
+				<div class="column large-4 large-offset-2 medium-4 medium-offset-2 small-10 small-offset-1">
+					<div class="checklist js_reveal">
+						<div class="list-item"><span class="checkbox"></span>biker meetup</div>
+						<div class="list-item"><span class="checkbox"></span>wedding ceremony</div>
+						<div class="list-item"><span class="checkbox"></span>corporate offsite</div>
+						<div class="list-item"><span class="checkbox"></span>team building meet</div>
+						<div class="list-item"><span class="checkbox"></span>fitness challenge</div>
+						<div class="list-item"><span class="checkbox"></span>vehicle launch</div>
+					</div>
+				</div>
+				<div class="column large-3 large-offset-1 medium-4 medium-offset-1 small-10 small-offset-1">
+					<div class="essentials h2">
+						What event would you like to host at Canterbury?
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row checklist-row">
-			<div class="column large-4 large-offset-2 medium-4 medium-offset-2 small-10 small-offset-1">
-				<div class="checklist js_reveal">
-					<div class="list-item"><span class="checkbox"></span>biker meetup</div>
-					<div class="list-item"><span class="checkbox"></span>wedding ceremony</div>
-					<div class="list-item"><span class="checkbox"></span>corporate offsite</div>
-					<div class="list-item"><span class="checkbox"></span>team building meet</div>
-					<div class="list-item"><span class="checkbox"></span>fitness challenge</div>
-					<div class="list-item"><span class="checkbox"></span>vehicle launch</div>
-				</div>
-			</div>
-			<div class="column large-3 large-offset-1 medium-4 medium-offset-1 small-10 small-offset-1">
-				<div class="essentials h2">
-					What event would you like to host at Canterbury?
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+	</section>
 
-<!-- Modal JS -->
-<script type="text/javascript" src="/js/modules/modal.js<?php echo $ver?>"></script>
+	<!-- Modal JS -->
+	<script type="text/javascript" src="/js/modules/modal.js<?php echo $ver?>"></script>
+
+</div><!-- End: Host Page -->
 
 
 

@@ -14,31 +14,18 @@
 }
 
 
-body.build .intro-section .title {
-	color: var(--off-green);
-}
-
-body.build .contact-section .contact-card {
-	background-color: var(--off-green);
-}
-
-body.build .contact-section .or span {
-	background-color: var(--off-green);
-}
-
-
-body.build .intro-section {
+.build .intro-section {
 	padding-bottom: 15rem;
 }
 
 @media ( max-width: 1039px ) {
-	body.build .intro-section {
+	.build .intro-section {
 		padding-bottom: 10rem;
 	}
 }
 
 @media ( max-width: 639px )  {
-	body.build .intro-section {
+	.build .intro-section {
 		padding-bottom: 4rem;
 	}
 }

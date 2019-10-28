@@ -14,17 +14,13 @@
 }
 
 
-body.book .intro-section .title {
-	color: var(--red);
-}
 
-body.book .contact-section .contact-card {
-	background-color: var(--red);
-}
 
-body.book .contact-section .or span {
-	background-color: var(--red);
-}
+
+
+
+
+
 
 
 
@@ -34,8 +30,8 @@ body.book .contact-section .or span {
 	padding-top: 8rem;
 	/*padding-bottom: 8rem;*/
 	padding-bottom: 15rem;
-	color: var(--light);
-	background-color: var(--dark);
+	/*color: var(--light);*/
+	/*background-color: var(--dark);*/
 }
 
 .getaway-section .highlight-line {
@@ -79,7 +75,7 @@ body.book .contact-section .or span {
 }
 
 .weekend-video-section .video-overlay {
-	background: linear-gradient( -165deg, rgba(214,64,71,0.35), var(--red) 75%);
+	background: linear-gradient( 165deg, rgba(136,166,27,0.35), var(--green) 75%);
 }
 
 @media ( max-width: 639px ) {
