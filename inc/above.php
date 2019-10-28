@@ -18,6 +18,8 @@ $ver = '?v=20181126';
 //  	it should not get a 404. This because is setting the response header.
 http_response_code( 200 );
 
+$pageSlug = $_GET[ '_slug' ];
+
 ?>
 
 <!DOCTYPE html>
@@ -76,20 +78,20 @@ http_response_code( 200 );
 					<span class="line"></span>
 				</div>
 				<div class="container row">
-					<div class="navigation column large-8 large-offset-2 medium-10 medium-offset-1 small-12 js_navigation_box">
-						<a class="nav-button h2 js_nav_button ga_nav_button" data-page-id="buy" href="/buy">
+					<div class="navigation column xlarge-8 xlarge-offset-2 medium-10 medium-offset-1 small-12 js_navigation_box">
+						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $pageSlug == 'buy' ) : ?> active <?php endif; ?>" href="/buy">
 							Buy
 							<div class="label">A Plot</div>
 						</a>
-						<a class="nav-button h2 js_nav_button ga_nav_button" data-page-id="build" href="/build">
+						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $pageSlug == 'build' ) : ?> active <?php endif; ?>" href="/build">
 							Build
 							<div class="label">A Villa</div>
 						</a>
-						<a class="nav-button h2 js_nav_button ga_nav_button" data-page-id="book" href="/book">
+						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $pageSlug == 'book' ) : ?> active <?php endif; ?>" href="/book">
 							Book
 							<div class="label">A Weekend Getaway</div>
 						</a>
-						<a class="nav-button h2 js_nav_button ga_nav_button" data-page-id="host" href="/host">
+						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $pageSlug == 'host' ) : ?> active <?php endif; ?>" href="/host">
 							Host
 							<div class="label">An Event</div>
 						</a>

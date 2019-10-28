@@ -75,7 +75,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	background-color: #011126;
+	background-color: var(--dark);
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -175,7 +175,7 @@
 	bottom: 0;
 
 	opacity: .4;
-	background-color: #011126;
+	background-color: var(--dark);
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

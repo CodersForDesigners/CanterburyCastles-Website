@@ -8,8 +8,8 @@
 
 .landing-section {
 	position: relative;
-	color: #FFFFFF;
-	background-color: #011126;
+	color: var(--light);
+	background-color: var(--dark);
 	font-size: 0;
 	z-index: 1
 }
@@ -75,7 +75,7 @@
 	}
 }
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 	.landing-section .landing-image {
 		height: 90vh;
 		background-image: url( '/media/landing-ipad.jpg?ver=07092019' ), url( '/media/landing.jpg?ver=07092019' );
@@ -89,7 +89,7 @@
 	}
 }
 
-@media ( max-width: 640px )  {
+@media ( max-width: 639px )  {
 	.landing-section {
 		padding-top: 50px;
 	}
@@ -151,12 +151,12 @@
 	overflow: hidden;
 	padding-top: 2.8rem;
 	padding-bottom: 3.2rem;
-	color: #FFFFFF;
+	color: var(--light);
 	font-style: italic;
 	line-height: 1.4;
 	text-align: center;
 	text-decoration: none;
-	background-color: #011126;
+	background-color: var(--dark);
 	-webkit-transition: -webkit-transform .3s cubic-bezier(0.35, 0.18, 0.56, 1.46), color 0.2s ease-out;
 	transition: transform .3s cubic-bezier(0.35, 0.18, 0.56, 1.46), color 0.3s ease-out;
 }
@@ -171,10 +171,10 @@
 
 .navigation-section .navigation .nav-button:not(.active):hover { color: #B5B5B5; }
 
-.navigation-section .navigation .nav-button[data-page-id="buy"]:not(.active):hover .label   { color: #88A61B; }
-.navigation-section .navigation .nav-button[data-page-id="build"]:not(.active):hover .label { color: #88A61C; }
-.navigation-section .navigation .nav-button[data-page-id="book"]:not(.active):hover .label  { color: #D64047; }
-.navigation-section .navigation .nav-button[data-page-id="host"]:not(.active):hover .label  { color: #A271CE; }
+.navigation-section .navigation .nav-button[data-page-id="buy"]:not(.active):hover .label   { color: var(--green); }
+.navigation-section .navigation .nav-button[data-page-id="build"]:not(.active):hover .label { color: var(--off-green); }
+.navigation-section .navigation .nav-button[data-page-id="book"]:not(.active):hover .label  { color: var(--red); }
+.navigation-section .navigation .nav-button[data-page-id="host"]:not(.active):hover .label  { color: var(--magenta); }
 
 
 
@@ -186,28 +186,28 @@
 	top: 3rem;
 	right: 0;
 	bottom: 3rem;
-	background-color: #88A61B;
+	background-color: var(--green);
 }
 
-body.buy .navigation-section .navigation .nav-button:after   { background-color: #88A61B; }
-body.build .navigation-section .navigation .nav-button:after { background-color: #88A61C; }
-body.book .navigation-section .navigation .nav-button:after  { background-color: #D64047; }
-body.host .navigation-section .navigation .nav-button:after  { background-color: #A271CE; }
+body.buy .navigation-section .navigation .nav-button:after   { background-color: var(--green); }
+body.build .navigation-section .navigation .nav-button:after { background-color: var(--off-green); }
+body.book .navigation-section .navigation .nav-button:after  { background-color: var(--red); }
+body.host .navigation-section .navigation .nav-button:after  { background-color: var(--magenta); }
 
 
 .navigation-section .navigation .nav-button:last-child:after { display: none; }
 
 .navigation-section .navigation .nav-button.active {
-	background-color: #88A61B;
+	background-color: var(--green);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 	z-index: 2;
 }
 
-body.buy .navigation-section .navigation .nav-button.active   { background-color: #88A61B; }
-body.build .navigation-section .navigation .nav-button.active { background-color: #88A61C; }
-body.book .navigation-section .navigation .nav-button.active  { background-color: #D64047; }
-body.host .navigation-section .navigation .nav-button.active  { background-color: #A271CE; }
+body.buy .navigation-section .navigation .nav-button.active   { background-color: var(--green); }
+body.build .navigation-section .navigation .nav-button.active { background-color: var(--off-green); }
+body.book .navigation-section .navigation .nav-button.active  { background-color: var(--red); }
+body.host .navigation-section .navigation .nav-button.active  { background-color: var(--magenta); }
 
 
 @media ( max-width: 1440px ) {
@@ -217,7 +217,7 @@ body.host .navigation-section .navigation .nav-button.active  { background-color
 	}
 }
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 	.navigation-section .navigation {
 		margin-top: -6.5rem;
 	}
@@ -227,9 +227,9 @@ body.host .navigation-section .navigation .nav-button.active  { background-color
 	}
 }
 
-@media ( max-width: 640px ) {
+@media ( max-width: 639px ) {
 	.navigation-section {
-		background-color: #011126;
+		background-color: var(--dark);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -268,7 +268,7 @@ body.host .navigation-section .navigation .nav-button.active  { background-color
 		display: block;
 		width: 100%;
 		height: 2px;
-		background-color: #FFFFFF;
+		background-color: var(--light);
 		margin-bottom: 4px;
 		transition: transform .3s ease-out;
 		opacity: 0.7;

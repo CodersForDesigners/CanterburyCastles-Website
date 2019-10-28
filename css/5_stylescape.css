@@ -33,13 +33,19 @@
 :root {
 	--light : #FFFFFF;
 	--off-light : #F2F2F2;
-	--neutral : #95A2A6;
+	--neutral : #B5B5B5;
 	--off-neutral : #D5E0E3;
 	--dark : #011126;
 	--off-dark : #626D73;
 	--black : #1D2225;
 
-	--yellow : #FFEB3B;
+	--yellow-high : #FFEB3B;
+
+	--green : #88A61B;
+	--off-green : #49A52B;
+	--yellow : #F9C73B;
+	--red : #D64047;
+	--magenta : #A271CE;
 
 	--container-width: 300px;
 	--space-min : 10px;
@@ -72,13 +78,13 @@
 
 ::-moz-selection {
 	color: var(--dark);
-	background: var(--yellow);
+	background: var(--yellow-high);
 	text-shadow: none;
 }
 
 ::selection {
 	color: var(--dark);
-	background: var(--yellow);
+	background: var(--yellow-high);
 	text-shadow: none;
 }
 
@@ -154,33 +160,33 @@ a * { pointer-events: none; }
 	letter-spacing: 0.1rem;
 }
 
-.h1 { font-size: 4.2rem; }
-.h2 { font-size: 3.2rem; }
-.h3 { font-size: 2.6rem; }
+.h1 { font-size: 3.6rem; }
+.h2 { font-size: 2.5rem; }
+.h3 { font-size: 2.4rem; }
 .h4 { font-size: 2.0rem; }
-.h5 { font-size: 1.6rem; }
-.h6 { font-size: 1.4rem; }
-.p 	{ font-size: 1.4rem; }
+.h5 { font-size: 1.8rem; }
+.h6 { font-size: 1.5rem; }
+.p 	{ font-size: 1.5rem; }
 .small { font-size: 0.9rem; }
 .label { font-size: 1.1rem; }
 
 @media( min-width: 640px )  {
-	.h1 { font-size: 8.4rem; }
-	.h2 { font-size: 6.0rem; }
-	.h3 { font-size: 3.6rem; }
-	.h4 { font-size: 2.4rem; }
+	.h1 { font-size: 4.0rem; }
+	.h2 { font-size: 3.0rem; }
+	.h3 { font-size: 2.4rem; }
+	.h4 { font-size: 2.2rem; }
 	.h5 { font-size: 1.8rem; }
-	.h6 { font-size: 1.4rem; }
-	.p 	{ font-size: 1.4rem; }
+	.h6 { font-size: 1.5rem; }
+	.p 	{ font-size: 1.5rem; }
 	.small { font-size: 0.9rem; }
 	.label { font-size: 1.1rem; }
 }
 
 @media( min-width: 1040px ) {
-	.h1 { font-size: 9.6rem; }
-	.h2 { font-size: 6.0rem; }
-	.h3 { font-size: 3.6rem; }
-	.h4 { font-size: 2.4rem; }
+	.h1 { font-size: 6.4rem; }
+	.h2 { font-size: 3.6rem; }
+	.h3 { font-size: 2.4rem; }
+	.h4 { font-size: 2.2rem; }
 	.h5 { font-size: 1.8rem; }
 	.h6 { font-size: 1.5rem; }
 	.p 	{ font-size: 1.5rem; }
@@ -189,11 +195,11 @@ a * { pointer-events: none; }
 }
 
 @media( min-width: 1480px ) {
-	.h1 { font-size: 13.0rem; }
-	.h2 { font-size: 9.1rem;  }
-	.h3 { font-size: 5.2rem;  }
-	.h4 { font-size: 3.2rem;  }
-	.h5 { font-size: 2.6rem;  }
+	.h1 { font-size: 9.6rem; }
+	.h2 { font-size: 4.4rem;  }
+	.h3 { font-size: 3.2rem;  }
+	.h4 { font-size: 2.8rem;  }
+	.h5 { font-size: 2.2rem;  }
 	.h6 { font-size: 1.8rem;  }
 	.p 	{ font-size: 1.8rem;  }
 	.small { font-size: 1.3rem; }
@@ -217,6 +223,7 @@ button,
 .button {
 	height: var(--space-three-quarter);
 	padding: 0 calc(var(--space-three-quarter)/2);
+	font-family: 'Oswald', sans-serif;
 	font-size: 1.2rem;
 	line-height: var(--space-three-quarter);
 	color: var(--light);
@@ -265,11 +272,11 @@ button:focus,
 }
 
 .button-large {
-	height: calc( var(--space-three-quarter)*1.5 - 10 );
-	padding: 0 calc( (var(--space-three-quarter)*1.5 - 10px )/2 );
-	font-size: 1.4rem;
-	line-height: calc( var(--space-three-quarter)*1.5 - 10px );
-	border-radius: 0;
+	height: calc( var(--space-three-quarter)*1.5 - 10 ) !important;
+	padding: 0 calc( (var(--space-three-quarter)*1.5 - 10px )/2 ) !important;
+	font-size: 1.4rem !important;
+	line-height: calc( var(--space-three-quarter)*1.5 - 10px ) !important;
+	border-radius: 0 !important;
 }
 
 @media( min-width: 640px )  {
@@ -286,11 +293,11 @@ button:focus,
 	}
 
 	.button-large {
-		height: calc( var(--space-three-quarter)*1.5 );
-		padding: 0 calc( (var(--space-three-quarter)*1.5)/2 );
-		font-size: 1.6rem;
-		line-height: calc( var(--space-three-quarter)*1.5 );
-		border-radius: 0;
+		height: calc( var(--space-three-quarter)*1.5 ) !important;
+		padding: 0 calc( (var(--space-three-quarter)*1.5)/2 ) !important;
+		font-size: 1.6rem !important;
+		line-height: calc( var(--space-three-quarter)*1.5 ) !important;
+		border-radius: 0 !important;
 	}
 }
 @media( min-width: 1040px ) {
@@ -307,11 +314,11 @@ button:focus,
 	}
 
 	.button-large {
-		height: var(--space-three-quarter);
-		padding: 0 calc(var(--space-three-quarter)/2);
-		font-size: 1.6rem;
-		line-height: var(--space-three-quarter);
-		border-radius: 0;
+		height: var(--space-three-quarter) !important;
+		padding: 0 calc(var(--space-three-quarter)/2) !important;
+		font-size: 1.6rem !important;
+		line-height: var(--space-three-quarter) !important;
+		border-radius: 0 !important;
 	}
 
 	.button-large img {
@@ -337,11 +344,11 @@ button:focus,
 	}
 
 	.button-large {
-		padding: 0 calc(var(--space-three-quarter)/2);
-		height: var(--space-three-quarter);
-		font-size: 2.4rem;
-		line-height: var(--space-three-quarter);
-		border-radius: 0;
+		padding: 0 calc(var(--space-three-quarter)/2) !important;
+		height: var(--space-three-quarter) !important;
+		font-size: 2.4rem !important;
+		line-height: var(--space-three-quarter) !important;
+		border-radius: 0 !important;
 	}
 
 	.button-large img {
@@ -375,13 +382,14 @@ input[type="date"],
 textarea,
 select {
 	height: var(--space-three-quarter);
-	padding: 11px calc(var(--space-three-quarter)/2); /* This vertically centers text on FF, ignored by Webkit */
+	padding: 5px calc(var(--space-three-quarter)/2); /* This vertically centers text on FF, ignored by Webkit */
 	font-size: 1.4rem;
-	color: var(--dark);
-	background-color: var(--light);
+	color: inherit;
+	background-color: transparent;
 	border: 0;
+	border-bottom: solid 2px var(--light);
 	border-radius: 0;
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	/*box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);*/
 }
 
 textarea {
@@ -399,7 +407,10 @@ input[type="date"]:focus,
 textarea:focus,
 select:focus {
 	outline: 0;
-	box-shadow: 0px 2px 6px rgba(20,20,10,0.5);
+	border: 0;
+	color: var(--green);
+	border-bottom: solid 2px var(--green);
+	/*box-shadow: 0px 2px 6px rgba(20,20,10,0.5);*/
 }
 
 select { cursor: pointer; }
@@ -424,7 +435,7 @@ select { cursor: pointer; }
 	textarea,
 	select {
 		height: var(--space-three-quarter);
-		padding: 11px calc(var(--space-three-quarter)/2); /* This vertically centers text on FF, ignored by Webkit */
+		padding: 0 calc(var(--space-three-quarter)/2); /* This vertically centers text on FF, ignored by Webkit */
 		font-size: 1.4rem;
 	}
 
@@ -448,7 +459,7 @@ select { cursor: pointer; }
 	textarea,
 	select {
 		height: var(--space-half);
-		padding: 11px calc(var(--space-half)/2); /* This vertically centers text on FF, ignored by Webkit */
+		padding: 5px calc(var(--space-half)/2); /* This vertically centers text on FF, ignored by Webkit */
 		font-size: 1.5rem;
 	}
 
@@ -472,7 +483,7 @@ select { cursor: pointer; }
 	textarea,
 	select {
 		height: var(--space-half);
-		padding: 11px calc(var(--space-half)/2); /* This vertically centers text on FF, ignored by Webkit */
+		padding: 5px calc(var(--space-half)/2); /* This vertically centers text on FF, ignored by Webkit */
 		font-size: 1.8rem;
 	}
 
@@ -496,26 +507,42 @@ select { cursor: pointer; }
  */
 
 .fill-light {
-	color: var(--dark);
-	background-color: var(--light); }
+	color: var(--dark) !important;
+	background-color: var(--light) !important; }
 .fill-off-light {
-	color: var(--dark);
-	background-color: var(--off-light); }
+	color: var(--dark) !important;
+	background-color: var(--off-light) !important; }
 .fill-neutral {
-	color: var(--light);
-	background-color: var(--neutral); }
+	color: var(--light) !important;
+	background-color: var(--neutral) !important; }
 .fill-off-neutral {
-	color: var(--dark);
-	background-color: var(--off-neutral); }
+	color: var(--dark) !important;
+	background-color: var(--off-neutral) !important; }
 .fill-dark {
-	color: var(--light);
-	background-color: var(--dark); }
+	color: var(--light) !important;
+	background-color: var(--dark) !important; }
 .fill-off-dark {
-	color: var(--light);
-	background-color: var(--off-dark); }
+	color: var(--light) !important;
+	background-color: var(--off-dark) !important; }
 .fill-black {
-	color: var(--light);
-	background-color: var(--black); }
+	color: var(--light) !important;
+	background-color: var(--black) !important; }
+
+.fill-green {
+	color: var(--light) !important;
+	background-color: var(--green) !important; }
+.fill-off-green {
+	color: var(--light) !important;
+	background-color: var(--off-green) !important; }
+.fill-yellow {
+	color: var(--dark) !important;
+	background-color: var(--yellow) !important; }
+.fill-red {
+	color: var(--light) !important;
+	background-color: var(--red) !important; }
+.fill-magenta {
+	color: var(--light) !important;
+	background-color: var(--magenta) !important; }
 
 
 
@@ -541,6 +568,17 @@ select { cursor: pointer; }
 	color: var(--off-dark); }
 .text-black {
 	color: var(--black); }
+
+.text-green {
+	color: var(--green); }
+.text-off-green {
+	color: var(--off-green); }
+.text-yellow {
+	color: var(--yellow); }
+.text-red {
+	color: var(--red); }
+.text-magenta {
+	color: var(--magenta); }
 
 
 
@@ -689,3 +727,50 @@ select { cursor: pointer; }
 
 
 
+/* -- highlight line -- */
+
+.highlight-line {
+	width: 100px;
+	height: 2px;
+	background-color: var(--green);
+}
+
+body.buy .highlight-line   { background-color: var(--green); }
+body.build .highlight-line { background-color: var(--off-green); }
+body.book .highlight-line  { background-color: var(--red); }
+body.host .highlight-line  { background-color: var(--magenta); }
+
+
+
+
+/* -- Social Buttons -- */
+
+.social-buttons {
+	font-size: 0;
+	margin-top: 1.5rem;
+	font-size: 0;
+}
+.social-buttons a {
+	display: inline-block;
+	margin-right: 1.5rem;
+	text-decoration: none;
+	cursor: pointer
+}
+.social-buttons a:hover {
+	opacity: 0.8;
+}
+.social-buttons a img {
+	display: block;
+}
+.social-buttons a:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 639px) {
+	.social-buttons {
+		margin-top: 1rem;
+	}
+	.social-buttons a {
+		margin-right: 1rem;
+	}
+}

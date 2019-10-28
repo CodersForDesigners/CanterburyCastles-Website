@@ -4,7 +4,7 @@
  */
 
 .lazaro-section {
-	background-color: #FFFFFF;
+	background-color: var(--light);
 	font-family: sans-serif;
 }
 
@@ -18,7 +18,7 @@
 		line-height: 1.25;
 		font-weight: 400;
 		text-decoration: none;
-		background-image: url( "/img/lazaro-logo.svg?ver=07092019" );
+		background-image: url( '/media/lazaro-logo.svg?ver=07092019' );
 		background-repeat: no-repeat;
 		background-position: left center;
 	}
@@ -31,7 +31,7 @@
 		color: #E30F13;
 	}
 
-@media ( max-width: 640px ) {
+@media ( max-width: 639px ) {
 
 	.lazaro-section .lazaro-link {
 		font-size: 0;

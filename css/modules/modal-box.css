@@ -56,5 +56,5 @@
 	font-size: 2.4rem;
 	line-height: 1;
 	text-align: center;
-	background-color: #FFFFFF;
+	background-color: var(--light);
 }

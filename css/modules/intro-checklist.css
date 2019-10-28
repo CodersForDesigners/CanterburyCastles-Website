@@ -22,7 +22,7 @@
 	width: 12px;
 	height: 12px;
 	float: right;
-	border: solid 2px #011126;
+	border: solid 2px var(--dark);
 }
 
 .intro-section .checklist .checkbox:before,
@@ -30,20 +30,20 @@
 	display: inline-block;
 	content: '';
 	position: absolute;
-	background-color: #88A61B;
+	background-color: var(--green);
 	height: 3px;
 	transform-origin: left center;
 	transition: transform .4s;
 }
 
 body.buy .intro-section .checklist .checkbox:before,
-body.buy .intro-section .checklist .checkbox:after   { background-color: #88A61B; }
+body.buy .intro-section .checklist .checkbox:after   { background-color: var(--green); }
 body.build .intro-section .checklist .checkbox:before,
-body.build .intro-section .checklist .checkbox:after { background-color: #88A61C; }
+body.build .intro-section .checklist .checkbox:after { background-color: var(--off-green); }
 body.book .intro-section .checklist .checkbox:before,
-body.book .intro-section .checklist .checkbox:after  { background-color: #D64047; }
+body.book .intro-section .checklist .checkbox:after  { background-color: var(--red); }
 body.host .intro-section .checklist .checkbox:before,
-body.host .intro-section .checklist .checkbox:after  { background-color: #A271CE; }
+body.host .intro-section .checklist .checkbox:after  { background-color: var(--magenta); }
 
 .intro-section .checklist .checkbox:before {
 	top: 0;
@@ -94,11 +94,11 @@ body.host .intro-section .checklist .checkbox:after  { background-color: #A271CE
 }
 .intro-section .checklist.js_revealDone .checkbox:after {
 	transform: rotate(-45deg) translateY(8px) translateX(-1px) scaleX(1);
-	box-shadow: 0 0 1px 2px #F2F2F2;
+	box-shadow: 0 0 1px 2px var(--off-light);
 }
 
 
-@media ( max-width: 640px )  {
+@media ( max-width: 639px )  {
 
 	.intro-section .checklist-row {
 		margin-top: 3rem;
@@ -133,7 +133,7 @@ body.host .intro-section .checklist .checkbox:after  { background-color: #A271CE
 		transform: rotate(-45deg) translateY(8px) translateX(-1px) scaleX(1);
 		transition-delay: .2s;
 		z-index: 1;
-		box-shadow: 0 0 1px 2px #F2F2F2;
+		box-shadow: 0 0 1px 2px var(--off-light);
 	}
 
 	.intro-section .checklist-row .essentials {

@@ -73,11 +73,11 @@ body.modal_freeze .page {
 	font-family: 'Arial', sans-serif;
 	font-size: 25px;
 	line-height: 25px;
-	color: #011126;
+	color: var(--dark);
 }
 
 .modal_content a {
-	color: #FFFFFF;
+	color: var(--light);
 	text-decoration: none;
 	font-family: 'Arial', sans-serif;
 }
@@ -88,7 +88,7 @@ body.modal_freeze .page {
 }
 
 .modal_window.facebook .modal_content {
-	background-color: #FFFFFF;
+	background-color: var(--light);
 }
 
 .modal_window.facebook .modal_content blockquote {
@@ -102,7 +102,7 @@ body.modal_freeze .page {
 
 .modal_window.contact .modal_content {
 	padding: 15px;
-	background-color: #FFFFFF;
+	background-color: var(--light);
 }
 
 .modal_window.contact .modal_content .title {
@@ -112,7 +112,7 @@ body.modal_freeze .page {
 }
 
 .modal_window.contact .modal_content .highlight-line {
-	background-color: #011126;
+	background-color: var(--dark);
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }

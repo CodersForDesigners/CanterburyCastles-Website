@@ -4,10 +4,10 @@
  */
 
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 }
 
-@media ( max-width: 640px )  {
+@media ( max-width: 639px )  {
 }
 
 @media ( max-width: 400px )  {
@@ -15,15 +15,15 @@
 
 
 body.host .intro-section .title {
-	color: #A271CE;
+	color: var(--magenta);
 }
 
 body.host .contact-section .contact-card {
-	background-color: #A271CE;
+	background-color: var(--magenta);
 }
 
 body.host .contact-section .or span {
-	background-color: #A271CE;
+	background-color: var(--magenta);
 }
 
 
@@ -32,13 +32,13 @@ body.host .intro-section {
 	padding-bottom: 15rem;
 }
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 1039px ) {
 	body.host .intro-section {
 		padding-bottom: 10rem;
 	}
 }
 
-@media ( max-width: 640px )  {
+@media ( max-width: 639px )  {
 	body.host .intro-section {
 		padding-bottom: 4rem;
 	}

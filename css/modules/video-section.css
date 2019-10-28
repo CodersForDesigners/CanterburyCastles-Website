@@ -3,12 +3,12 @@
 	display: inline-block;
 	width: 100%;
 	height: auto;
-	background-color: #011126;
+	background-color: var(--dark);
 }
 
 .video-overlay {
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	
 	top: 0;
 	left: 0;
@@ -18,7 +18,7 @@
 	width: 100%;
 	height: auto;
 
-	color: #FFFFFF;
+	color: var(--light);
 	background-color: rgba(1,17,38,0.5);
 
 	-ms-box-orient: horizontal;
@@ -34,11 +34,11 @@
 }
 
 .video-overlay .caption {
-	color: #FFFFFF;
+	color: var(--light);
 	line-height: 1.4;
 	margin-bottom: 5%;
 }
 
-@media ( max-width: 1040px ) {
+@media ( max-width: 639px ) {
 	.section-video { display: none; }
 }

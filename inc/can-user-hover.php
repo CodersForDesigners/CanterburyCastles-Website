@@ -27,7 +27,7 @@
 
 	.detect-hover { display: none }
 	.detect-hover:after { display: none; content: "dunno"; }
-	@media ( max-width: 1040px ) {
+	@media ( max-width: 1039px ) {
 		.detect-hover:after { content: "maybe"; }
 	}
 	@media ( pointer: coarse ) {

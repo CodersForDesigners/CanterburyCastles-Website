@@ -54,13 +54,14 @@ require_once __DIR__ . '/../inc/above.php';
 
 <!-- weekend video section -->
 <section class="weekend-video-section">
-	<video class="section-video" autoplay loop>
-		<source src="/video/video-3.mp4<?php echo $ver?>" type="video/mp4">
-	</video>
+	<div class="section-video video-embed video-embed-bg js_video_embed js_video_get_player" data-src="H3WLg3nXtuI" data-loop="true" data-autoplay="true" style="padding-top: 33.75%;">
+		<div class="video-embed-placeholder" style="background-image: url( '/media/video-thumb-3.jpg<?php echo $ver; ?>' );"></div>
+		<!-- <div class="video-loading-indicator"></div> -->
+	</div>
 	<div class="video-overlay">
 		<div class="container video-overlay-flex row">
 			<!-- <span class="caption h2 column large-5 large-offset-5 medium-6 medium-offset-3 small-10 small-offset-1 text-right">Leave the city behind,<br> your job is to have fun.</span> -->
-			<span class="caption h2 column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">Leave the city behind,<br> and leave the rest to us.</span>
+			<span class="caption h2 column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">Leave the city behind, and leave the rest to us.</span>
 		</div>
 	</div>
 </section>
@@ -72,10 +73,9 @@ require_once __DIR__ . '/../inc/above.php';
 		<div class="column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 			<!-- video -->
 			<div class="getaway-video">
-				<!-- <img src="/media/thumb-getaway.png<?php echo $ver?>"> -->
-				<div class="youtube_embed ga_video" data-src="https://www.youtube.com/embed/-Qj7pE64M_0?rel=0&amp;showinfo=0" data-ga-video-src="Aerial - Video">
-					<div class="youtube_load"></div>
-					<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen></iframe>
+				<!-- video embed -->
+				<div class="video-embed js_video_embed" data-src="-Qj7pE64M_0">
+					<div class="video-loading-indicator"></div>
 				</div>
 			</div>
 		</div>
@@ -96,25 +96,6 @@ require_once __DIR__ . '/../inc/above.php';
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
-
-<!-- contact section -->
-<section class="contact-section">
-	<div class="container row">
-
-		<div id="contact" class="contact-card column large-6 large-offset-3 medium-8 medium-offset-2 small-12 text-center">
-			<div class="title h5">Book a Weekend Now</div>
-			<a href="tel:9845077177" class="phone h2 block">Call +91 98450 77177</a>
-
-
-			<div class="button facebook button-secondary block modal_fire ga_facebook_form" data-mod-id="facebook">Chat with us on Facebook</div>
-			<div class="or"><span>OR</span></div>
-			<div class="button contact block modal_fire ga_get_in_touch_form" data-mod-id="contact">Help us get in touch</div>
-
-		</div>
-
 	</div>
 </section>
 
