@@ -239,13 +239,17 @@ body.host .navigation-section .navigation .nav-button.active  { background-color
 		clear: both;
 	}
 
+	.navigation-section .container {
+		max-width: none;
+	}
+
 	.navigation-section .logo-mobile {
 		position: relative;
 		display: inline-block;
 		width: 176px;
 		height: auto;
 		margin-top: 1rem;
-		margin-left: 3rem;
+		margin-left: 2rem;
 		float: left;
 	}
 
@@ -258,7 +262,7 @@ body.host .navigation-section .navigation .nav-button.active  { background-color
 		width: 30px;
 		height: 30px;
 		margin-top: 1rem;
-		margin-right: 1rem;
+		margin-right: 2rem;
 		padding: 8px 5px;
 		float: right;
 		z-index: 2;
@@ -270,13 +274,14 @@ body.host .navigation-section .navigation .nav-button.active  { background-color
 		height: 2px;
 		background-color: var(--light);
 		margin-bottom: 4px;
-		transition: transform .3s ease-out;
+		transition: .3s ease-out;
 		opacity: 0.7;
 	}
 	.navigation-section .menu-button .line:last-child { margin-bottom: 0;}
 
 	.navigation-section .menu-button.close .line:nth-child(2) {
-		transform: translateX(200%);
+		transform: translateX(-200%);
+		opacity: 0;
 	}
 	.navigation-section .menu-button.close .line:nth-child(1) {
 		transform: rotate(45deg) translateX(4.3px) translateY(4.3px);
@@ -289,19 +294,21 @@ body.host .navigation-section .navigation .nav-button.active  { background-color
 		display: inline-block;
 		width: auto;
 		position: absolute;
-		right: 0;
+		right: 2rem;
 		margin-top: 5rem;
 		-webkit-transform-origin: top right;
 		transform-origin: top right;
-		-webkit-transform: translateX(120%);
-		transform: translateX(120%);
-		-webkit-transition: -webkit-transform .3s cubic-bezier(0.35, 0.18, 0.56, 1.46);
-		transition: transform .3s cubic-bezier(0.35, 0.18, 0.56, 1.46);
+		-webkit-transform: translateY(-120%);
+		transform: translateY(-120%);
+		-webkit-transition: .3s cubic-bezier(0.35, 0.18, 0.56, 1.46);
+		transition: .3s cubic-bezier(0.35, 0.18, 0.56, 1.46);
+		opacity: 0
 	}
 
 	.navigation-section .navigation.show {
 		-webkit-transform: translateX(0);
 		transform: translateX(0);
+		opacity: 1;
 	}
 
 	.navigation-section .navigation .nav-button:after {
