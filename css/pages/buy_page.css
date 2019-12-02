@@ -152,6 +152,19 @@
 	line-height: 1.9;
 }
 
+.investment-section .action-brochure {
+	padding-top: 4rem;
+}
+
+.investment-section .action-brochure .info {
+	text-align: left;
+}
+
+.investment-section .action-brochure .info .title {
+	padding-top: 6rem;
+	padding-bottom: 2rem;
+}
+
 @media ( max-width: 1039px ) {
 	.investment-section {
 		padding-top: 6rem;
@@ -165,6 +178,12 @@
 	.investment-section .investment-video {
 		margin-top: 4rem;
 	}
+
+	.investment-section .action-brochure .info .title {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
 }
 
 @media ( max-width: 639px ) {
@@ -172,6 +191,7 @@
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 	}
+
 }
 
 
@@ -451,6 +471,14 @@
 	line-height: 1.9;
 }
 
+.aerial-section .action-masterplan .info {
+	text-align: left;
+}
+
+.aerial-section .action-masterplan img {
+	transform-origin: right bottom;
+	transform: scale(1.075); 
+}
 
 @media ( max-width: 1039px ) {
 	.aerial-section {
@@ -460,6 +488,10 @@
 
 	.aerial-section .aerial-video {
 		margin-bottom: 4rem;
+	}
+
+	.aerial-section .action-masterplan img {
+		transform: none;
 	}
 }
 

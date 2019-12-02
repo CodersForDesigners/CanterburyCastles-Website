@@ -78,6 +78,17 @@ require_once __DIR__ . '/../inc/above.php';
 				</div>
 			</div>
 		</div>
+		<div class="container row action-brochure">
+			<div class="column large-5 large-offset-0 medium-6 medium-offset-3 small-10 small-offset-1">
+				<img src="/media/action-brochure-mockup.png<?php echo $ver?>">
+			</div>
+			<div class="info column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
+				<div class="title h3">
+					If you’re in a hurry download a PDF Brochure instead 
+				</div>
+				<button class="button button-large fill-green">Download Now</button>
+			</div>
+		</div>
 	</section>
 
 
@@ -242,6 +253,38 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="description h6">
 					977 plots in 4 Sectors. Tarred roads, 24/7 Electricity, Water &amp; Security. 2 Clubhouses, Community &amp; Meditation Center, A Swimming Pool and Parks.
 				</div>
+			</div>
+		</div>
+		<div class="container row">
+			<div class="plot-price column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
+				<div class="title h3 space-half-top space-quarter-bottom">Get a quotation for a plot</div>
+				<div class="row space-min-bottom ">
+					<div class="columns inline-bottom small-12 large-3 h3">№ 345</div>
+					<div class="columns inline-bottom small-7 large-5 label text-uppercase">3200sft - East Facing - Starting at <span class="strong text-green">43 Lakhs</span></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block">get a quote</button></div>
+				</div>
+				<div class="row space-min-bottom ">
+					<div class="columns inline-bottom small-12 large-3 h3">№ 345</div>
+					<div class="columns inline-bottom small-7 large-5 label text-uppercase">3200sft - East Facing - Starting at <span class="strong text-green">43 Lakhs</span></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block">get a quote</button></div>
+				</div>
+				<div class="row space-min-bottom ">
+					<div class="columns inline-bottom small-12 large-3 h3">№ 345</div>
+					<div class="columns inline-bottom small-7 large-5 label text-uppercase">3200sft - East Facing - Starting at <span class="strong text-green">43 Lakhs</span></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block">get a quote</button></div>
+				</div>
+				<div class="row space-min-bottom ">
+					<div class="columns inline-bottom small-12 large-3 h3">№ 345</div>
+					<div class="columns inline-bottom small-7 large-5 label text-uppercase">3200sft - East Facing - Starting at <span class="strong text-green">43 Lakhs</span></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block">get a quote</button></div>
+				</div>
+			</div>
+			<div class="action-masterplan column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1 space-quarter-top">
+				<img src="/media/action-masterplan-mockup.png<?php echo $ver?>">
+				<div class="title h3 space-min-bottom">
+					Download the PDF Masterplan with Plot Numbers 
+				</div>
+				<button class="button button-large fill-green">Download Now</button>
 			</div>
 		</div>
 	</section>

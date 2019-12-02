@@ -20,13 +20,21 @@
 									<input class="form-field input-large block js_name" type="text" placeholder="Name">
 								</div>
 								</div>
-								<div class="form-row space-min-bottom">
+								<!-- <div class="form-row space-min-bottom">
 									<label class="visuallyhidden">Email</label>
 									<input class="form-field input-large block js_email" type="email" placeholder="Email">
-								</div>
+								</div> -->
 								<div class="form-row space-min-bottom">
 									<label class="visuallyhidden">Mobile</label>
 									<input class="form-field input-large block js_phone" type="tel" placeholder="Mobile">
+								</div>
+								<div class="form-row space-min-bottom">
+									<label class="visuallyhidden">Budget</label>
+									<select class="form-field input-large block">
+										<option selected="" disabled="">Select Budget</option>
+										<option>Rs.70Lakhs</option>
+									</select>
+								</div>
 								<div class="form-row space-quarter-top">
 									<label class="visuallyhidden">Enquire Now</label>
 									<input class="button button-large fill-green block" type="submit" value="Enquire Now">
@@ -110,7 +118,7 @@
 							<a href="/faqs" class="link label" data-ga-footer-src="Footer - Faqs">FAQ<span class="text-lowercase">s</span></a>
 							<a href="/nri" class="link label" data-ga-footer-src="Footer - NRI">NRI corner</a>
 							<a href="#contact" class="link label" data-ga-footer-src="Footer - Contact">Contact Us</a>
-							<a href="/download/masterplan.pdf<?php echo $ver?>" target="_blank" class="link label">PDF Masterplan</a>
+							<!-- <a href="/download/masterplan.pdf<?php echo $ver?>" target="_blank" class="link label">PDF Masterplan</a> -->
 						</div>
 					</div>
 			</section><!-- End: Footer Section -->

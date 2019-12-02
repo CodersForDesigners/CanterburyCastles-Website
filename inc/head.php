@@ -169,7 +169,7 @@ $pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 	- -->
 	<?php echo getContent( <<<ARB
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display:400,400i,700"
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Playfair+Display:400,400i,700"
 	rel="stylesheet">
 	<!-- Icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
