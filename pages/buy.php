@@ -16,7 +16,7 @@ require_once __DIR__ . '/../inc/above.php';
 <div class="buy">
 
 	<!-- intro section -->
-	<section class="intro-section">
+	<section class="intro-section no-overflow">
 		<div class="container">
 			<div class="row">
 				<div class="column large-3 large-offset-3 medium-4 medium-offset-2 small-10 small-offset-1">
@@ -37,7 +37,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- landscape video section -->
-	<section class="landscape-video-section">
+	<section class="landscape-video-section no-overflow">
 		<div class="section-video video-embed video-embed-bg js_video_embed js_video_get_player" data-src="6wWQUUrWRgs" data-loop="true" data-autoplay="true" style="padding-top: 33.75%;">
 			<div class="video-embed-placeholder" style="background-image: url( '/media/video-thumb-1.jpg<?php echo $ver; ?>' );"></div>
 			<!-- <div class="video-loading-indicator"></div> -->
@@ -51,7 +51,6 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- investment section -->
-	<section class="investment-section local-modal">
 		<div class="container row">
 			<div class="column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h2">
@@ -106,7 +105,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- location section -->
-	<section class="location-section">
+	<section class="location-section no-overflow">
 		<div class="location-map"></div>
 		<div class="container location-content row">
 			<div class="column large-3 large-offset-3 medium-4 medium-offset-2 small-10 small-offset-1">
@@ -137,7 +136,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- testimonials section -->
-	<section class="testimonials-section">
+	<section class="testimonials-section no-overflow">
 		<div class="container row">
 			<div class="column large-3 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h2">Spend a few minutes getting to know your neighbours.</div>
@@ -181,7 +180,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- gallery section -->
-	<section class="gallery-section">
+	<section class="gallery-section no-overflow">
 		<div class="gallery">
 			<!-- <img class="gallery-image" src="/media/gallery-placeholder.png<?php echo $ver?>"> -->
 			<div class="slick_gallery">
@@ -317,7 +316,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- aerial video section -->
-	<section class="aerial-video-section">
+	<section class="aerial-video-section no-overflow">
 		<div class="section-video video-embed video-embed-bg js_video_embed js_video_get_player" data-src="6wWQUUrWRgs" data-loop="true" data-autoplay="true" style="padding-top: 33.75%;">
 			<div class="video-embed-placeholder" style="background-image: url( '/media/video-thumb-2.jpg<?php echo $ver; ?>' );"></div>
 			<!-- <div class="video-loading-indicator"></div> -->
@@ -330,7 +329,7 @@ require_once __DIR__ . '/../inc/above.php';
 	</section>
 
 	<!-- masterplan section -->
-	<section class="masterplan-section">
+	<section class="masterplan-section no-overflow">
 		<div class="masterplan"></div>
 	</section>
 
