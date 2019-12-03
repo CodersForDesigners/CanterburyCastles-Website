@@ -3,7 +3,15 @@
  */
 
 #page-wrapper {
+	/*overflow-x: hidden;*/ /* Need to be disabled for position Sticky*/
+}
+
+section {
 	overflow-x: hidden;
+}
+
+.overflow {
+	overflow-x: visible !important;
 }
 
 /* -- Page Content -- */

@@ -779,3 +779,64 @@ body.host .highlight-line  { background-color: var(--magenta); }
 		margin-right: 1rem;
 	}
 }
+
+
+
+
+
+
+/*
+ *	Local Modal
+ */
+
+
+.local-modal {
+	transition: .4s ease-out;
+	position: relative;
+	z-index: 1;
+}
+
+.local-modal .container.row {
+	position: relative;
+	z-index: 1;
+}
+
+.local-modal.open {
+	transform: translateX(-100%);
+	overflow: visible;
+}
+
+.local-modal-box {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateX(100%);
+	color: var(--dark);
+}
+
+.local-modal-box .container {
+	position: -webkit-sticky;
+	position: sticky;
+	top: calc(50vh - 150px);
+}
+
+.local-modal-box .container .form-card {	min-height: 300px; }
+
+.local-modal-box .local-modal-close {
+	position: absolute;
+	top: 0px;
+	/*right: 10px;*/
+	z-index: 10;
+	font-size: 35px;
+	padding: 0;
+	width: var(--space-half);
+}
+
+@media ( max-width: 1039px ) {
+	.local-modal-box .local-modal-close {
+		width: var(--space-three-quarter);
+	}
+}

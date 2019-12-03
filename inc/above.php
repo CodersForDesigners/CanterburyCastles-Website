@@ -71,7 +71,7 @@ http_response_code( 200 );
 			</section><!-- End: Landing Section -->
 
 			<!-- Navigation Section -->
-			<section class="navigation-section row">
+			<section class="navigation-section row overflow">
 				<img class="logo-mobile" src="/media/logo-small.svg<?php echo $ver?>">
 				<div class="menu-button js_menu_button">
 					<span class="line"></span>

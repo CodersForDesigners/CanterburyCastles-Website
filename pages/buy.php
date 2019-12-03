@@ -51,7 +51,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- investment section -->
-	<section class="investment-section">
+	<section class="investment-section local-modal">
 		<div class="container row">
 			<div class="column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h2">
@@ -88,6 +88,19 @@ require_once __DIR__ . '/../inc/above.php';
 				</div>
 				<button class="button button-large fill-green">Download Now</button>
 			</div>
+		</div>
+		<div class="local-modal-box">
+			<!-- Sticky Content -->
+			<div class="container">
+				<div class="row">
+					<div class="form-card fill-dark space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas enim commodi, corrupti consequuntur recusandae unde, eum nisi cupiditate veritatis rerum, voluptates illo repellendus. Vel est illo eum consectetur ipsam quas?
+					</div>
+					<!-- Local Modal Close Button -->
+					<div class="button local-modal-close fill-red js_local_modal_close" style="font-size: 35px;">&times;</div>
+				</div>
+			</div>
+			<!-- End: Sticky Content -->
 		</div>
 	</section>
 
@@ -234,7 +247,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- aerial section -->
-	<section class="aerial-section">
+	<section class="aerial-section local-modal">
 		<div class="container row">
 			<div class="column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<!-- video -->
@@ -286,6 +299,19 @@ require_once __DIR__ . '/../inc/above.php';
 				</div>
 				<button class="button button-large fill-green">Download Now</button>
 			</div>
+		</div>
+		<div class="local-modal-box">
+			<!-- Sticky Content -->
+			<div class="container">
+				<div class="row">
+					<div class="form-card fill-dark space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas enim commodi, corrupti consequuntur recusandae unde, eum nisi cupiditate veritatis rerum, voluptates illo repellendus. Vel est illo eum consectetur ipsam quas?
+					</div>
+					<!-- Local Modal Close Button -->
+					<div class="button local-modal-close fill-red js_local_modal_close" style="font-size: 35px;">&times;</div>
+				</div>
+			</div>
+			<!-- End: Sticky Content -->
 		</div>
 	</section>
 

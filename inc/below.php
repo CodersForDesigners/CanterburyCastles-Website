@@ -4,7 +4,7 @@
 			<!-- ~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/~/ -->
 
 			<!-- Contact section -->
-			<section class="contact-section">
+			<section class="contact-section overflow">
 				<div class="container row">
 
 					<div id="contact" class="contact-card fill-dark column large-6 large-offset-3 medium-8 medium-offset-2 small-12 text-center">
