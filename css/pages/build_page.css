@@ -18,6 +18,10 @@
 	padding-bottom: 15rem;
 }
 
+.build .intro-section .title {
+    color: var(--off-green);
+}
+
 @media ( max-width: 1039px ) {
 	.build .intro-section {
 		padding-bottom: 10rem;

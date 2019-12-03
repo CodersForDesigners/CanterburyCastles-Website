@@ -20,7 +20,7 @@ require_once __DIR__ . '/../inc/above.php';
 		<div class="container">
 			<div class="row">
 				<div class="column large-4 large-offset-2 medium-4 medium-offset-2 small-10 small-offset-1">
-					<div class="title h2 ga_scroll_track">
+					<div class="title h2 ga_scroll_track text-green">
 					You want a Home, preferably without the hassles of building it.
 					</div>
 	 			</div>

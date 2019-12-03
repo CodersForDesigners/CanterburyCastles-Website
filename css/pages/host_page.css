@@ -19,6 +19,10 @@
 	padding-bottom: 15rem;
 }
 
+.host .intro-section .title {
+    color: var(--magenta);
+}
+
 @media ( max-width: 1039px ) {
 	.host .intro-section {
 		padding-bottom: 10rem;

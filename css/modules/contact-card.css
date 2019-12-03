@@ -61,6 +61,12 @@
 }*/
 
 
+.buy .contact-section .contact-card .button { background-color: var(--green); }
+.build .contact-section .contact-card .button { background-color: var(--off-green); }
+.book .contact-section .contact-card .button { background-color: var(--red); }
+.host .contact-section .contact-card .button { background-color: var(--magenta); }
+
+
 @media ( max-width: 1039px ) {
 	.contact-section .contact-card {
 		padding: 4.166665%;

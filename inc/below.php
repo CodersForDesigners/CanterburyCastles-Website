@@ -39,7 +39,7 @@
 								</div>
 								<div class="form-row space-quarter-top">
 									<label class="visuallyhidden">Enquire Now</label>
-									<input class="button button-large fill-green block" type="submit" value="Enquire Now">
+									<input class="button button-large block" type="submit" value="Enquire Now">
 								</div>
 							</form>
 						</div>
