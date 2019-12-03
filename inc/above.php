@@ -13,12 +13,13 @@ require_once __DIR__ . '/lazaro.php';
  */
 $ver = '?v=20181126';
 
+// Pull some data from the request
+$urlSlug = $_GET[ '_slug' ] ?? null;
+
 // #fornow
 // Just so that when some social media service (WhatsApp) try to ping URL,
 //  	it should not get a 404. This because is setting the response header.
 http_response_code( 200 );
-
-$pageSlug = $_GET[ '_slug' ] ?? null;
 
 ?>
 
@@ -28,7 +29,7 @@ $pageSlug = $_GET[ '_slug' ] ?? null;
 
 	<?php require_once 'head.php'; ?>
 
-	<body id="body" class="body">
+	<body id="body" class="body <?php echo $urlSlug ?: 'buy' ?>">
 
 		<?php
 			/*
@@ -79,19 +80,19 @@ $pageSlug = $_GET[ '_slug' ] ?? null;
 				</div>
 				<div class="container row">
 					<div class="navigation column xlarge-8 xlarge-offset-2 medium-10 medium-offset-1 small-12 js_navigation_box">
-						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $pageSlug == 'buy' ) : ?> active <?php endif; ?>" href="/buy">
+						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $urlSlug == 'buy' or $urlSlug == '' ) : ?> active <?php endif; ?>" href="/buy">
 							Buy
 							<div class="label">A Plot</div>
 						</a>
-						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $pageSlug == 'build' ) : ?> active <?php endif; ?>" href="/build">
+						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $urlSlug == 'build' ) : ?> active <?php endif; ?>" href="/build">
 							Build
 							<div class="label">A Villa</div>
 						</a>
-						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $pageSlug == 'book' ) : ?> active <?php endif; ?>" href="/book">
+						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $urlSlug == 'book' ) : ?> active <?php endif; ?>" href="/book">
 							Book
 							<div class="label">A Weekend Getaway</div>
 						</a>
-						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $pageSlug == 'host' ) : ?> active <?php endif; ?>" href="/host">
+						<a class="nav-button h2 js_nav_button ga_nav_button <?php if ( $urlSlug == 'host' ) : ?> active <?php endif; ?>" href="/host">
 							Host
 							<div class="label">An Event</div>
 						</a>
