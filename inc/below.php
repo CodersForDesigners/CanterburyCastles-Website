@@ -32,7 +32,9 @@
 									<label class="visuallyhidden">Budget</label>
 									<select class="form-field input-large block">
 										<option selected="" disabled="">Select Budget</option>
-										<option>Rs.70Lakhs</option>
+										<option>Around Rs.30 Lakhs</option>
+										<option>Around Rs.60 Lakhs</option>
+										<option>Around Rs.90 Lakhs</option>
 									</select>
 								</div>
 								<div class="form-row space-quarter-top">
