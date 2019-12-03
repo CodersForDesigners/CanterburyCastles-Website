@@ -75,7 +75,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<!-- video -->
 				<div class="getaway-video">
 					<!-- video embed -->
-					<div class="video-embed js_video_embed" data-src="-Qj7pE64M_0">
+					<div class="video-embed js_video_embed" data-src="-j3GfqAHETo">
 						<div class="video-loading-indicator"></div>
 					</div>
 				</div>
