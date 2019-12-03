@@ -6,7 +6,7 @@
 	/*overflow-x: hidden;*/ /* Need to be disabled for position Sticky*/
 }
 
-section {
+.no-overflow {
 	overflow-x: hidden;
 }
 
