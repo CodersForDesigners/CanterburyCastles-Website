@@ -18,7 +18,7 @@ $ver = '?v=20181126';
 //  	it should not get a 404. This because is setting the response header.
 http_response_code( 200 );
 
-$pageSlug = $_GET[ '_slug' ];
+$pageSlug = $_GET[ '_slug' ] ?? null;
 
 ?>
 
