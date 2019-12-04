@@ -808,7 +808,6 @@ body.host .highlight-line  { background-color: var(--magenta); }
 }
 
 .local-modal.open {
-	transform: translateX(-100%);
 	overflow: visible;
 	animation: none;
 }
@@ -822,6 +821,12 @@ body.host .highlight-line  { background-color: var(--magenta); }
 	bottom: 0;
 	transform: translateX(100%);
 	color: var(--dark);
+	transition: .4s ease-out;
+	background-color: rgba(1, 11, 25,0.8);
+}
+
+.local-modal.open .local-modal-box {
+	transform: translateX(0);
 }
 
 .local-modal-box .container {

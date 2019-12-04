@@ -93,7 +93,7 @@ require_once __DIR__ . '/../inc/above.php';
 			<!-- Sticky Content -->
 			<div class="container">
 				<div class="row">
-					<div class="form-card fill-dark space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
+					<div class="form-card fill-light space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas enim commodi, corrupti consequuntur recusandae unde, eum nisi cupiditate veritatis rerum, voluptates illo repellendus. Vel est illo eum consectetur ipsam quas?
 					</div>
 					<!-- Local Modal Close Button -->
@@ -304,7 +304,7 @@ require_once __DIR__ . '/../inc/above.php';
 			<!-- Sticky Content -->
 			<div class="container">
 				<div class="row">
-					<div class="form-card fill-dark space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
+					<div class="form-card fill-light space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas enim commodi, corrupti consequuntur recusandae unde, eum nisi cupiditate veritatis rerum, voluptates illo repellendus. Vel est illo eum consectetur ipsam quas?
 					</div>
 					<!-- Local Modal Close Button -->
