@@ -66,7 +66,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<!-- video -->
 				<div class="investment-video">
 					<!-- video embed -->
-					<div class="video-embed js_video_embed" data-src="kkkDjjT0Ygo">
+					<div class="video-embed js_video_embed" data-src="RWGrlxLzlik">
 						<div class="video-loading-indicator"></div>
 					</div>
 				</div>
@@ -149,7 +149,7 @@ require_once __DIR__ . '/../inc/above.php';
 							<!-- video -->
 							<div class="testimonial-video">
 								<!-- video embed -->
-								<div class="video-embed js_video_embed" data-src="KVeEdgXocQ0">
+								<div class="video-embed js_video_embed" data-src="nhBOMfPThok">
 									<div class="video-loading-indicator"></div>
 								</div>
 							</div>
@@ -164,7 +164,7 @@ require_once __DIR__ . '/../inc/above.php';
 							<!-- video -->
 							<div class="testimonial-video">
 								<!-- video embed -->
-								<div class="video-embed js_video_embed" data-src="rNvZ7KYbP4o">
+								<div class="video-embed js_video_embed" data-src="ischiW2dczo">
 									<div class="video-loading-indicator"></div>
 								</div>
 							</div>

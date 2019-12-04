@@ -105,7 +105,7 @@
 					<div class="column xlarge-5 large-6 large-offset-1 medium-6 small-12">
 						<div class="title h5">The Canterbury Story</div>
 						<!-- video embed -->
-						<div class="video-embed js_video_embed" data-src="kkkDjjT0Ygo">
+						<div class="video-embed js_video_embed" data-src="RWGrlxLzlik">
 							<div class="video-loading-indicator"></div>
 						</div>
 					</div>
