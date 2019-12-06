@@ -51,7 +51,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- investment section -->
-	<section class="investment-section local-modal">
+	<section class="investment-section local-modal qpid_login_site js_investment_section">
 		<div class="container row">
 			<div class="column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h2">
@@ -84,17 +84,55 @@ require_once __DIR__ . '/../inc/above.php';
 			</div>
 			<div class="info column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h3">
-					If you’re in a hurry download a PDF Brochure instead 
+					If you’re in a hurry download a PDF Brochure instead
 				</div>
-				<button class="button button-large fill-green">Download Now</button>
+				<a class="button button-large fill-green js_download_brochure" data-c="test-trac-1" target="_blank" data-href="">Download Now</a>
 			</div>
 		</div>
 		<div class="local-modal-box">
 			<!-- Sticky Content -->
 			<div class="container">
 				<div class="row">
-					<div class="form-card fill-light space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas enim commodi, corrupti consequuntur recusandae unde, eum nisi cupiditate veritatis rerum, voluptates illo repellendus. Vel est illo eum consectetur ipsam quas?
+					<div class="form-card fill-dark space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
+						<!-- Phone Trap form -->
+						<form class="js_phone_form">
+							<div class="form-row columns small-12 _medium-6" style="position: relative">
+								<label><span class="label inline text-neutral-1 text-uppercase">Mobile Number</span></label>
+								<div class="phone-trap minimal phone-number">
+									<div class="block prefix-group" style="position: relative">
+										<select class="js_phone_country_code" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0">
+											<?php include __DIR__ . '/../inc/phone-country-codes.php' ?>
+										</select>
+										<input class="prefix js_phone_country_code_label button" value="+91" style="pointer-events: none; width: 100%;">
+									</div>
+									<input class="phone block" type="text" name="phone-number">
+									<label class="submit block">
+										<span class="hidden label inline text-neutral-1 text-uppercase">Submit</span>
+										<button class="button block">→</button>
+									</label>
+								</div>
+							</div>
+						</form>
+						<!-- OTP form -->
+						<form class="js_otp_form" style="display: none;">
+							<div class="form-row columns small-12 _medium-6">
+								<div class="otp-trap minimal">
+									<label class="block">
+										<span class="label inline text-neutral-1 text-uppercase">Enter the OTP</span>
+										<input class="otp block" type="text" name="otp">
+									</label>
+									<label class="submit block">
+										<span class="invisible label inline text-neutral-1 text-uppercase">Submit</span>
+										<button class="button block">→</button>
+									</label>
+								</div>
+							</div>
+							<br>
+							<div class="form-row columns small-12 large-6 clearfix hidden">
+								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-left" tabindex="-1">Re-send OTP</div>
+								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-right" tabindex="-1">Enter different number</div>
+							</div>
+						</form>
 					</div>
 					<!-- Local Modal Close Button -->
 					<div class="button local-modal-close fill-red js_local_modal_close" style="font-size: 35px;">&times;</div>
@@ -247,7 +285,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- aerial section -->
-	<section class="aerial-section local-modal">
+	<section class="aerial-section no-overflow local-modal qpid_login_site js_aerial_section">
 		<div class="container row">
 			<div class="column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<!-- video -->
@@ -295,9 +333,9 @@ require_once __DIR__ . '/../inc/above.php';
 			<div class="action-masterplan column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1 space-quarter-top">
 				<img src="/media/action-masterplan-mockup.png<?php echo $ver?>">
 				<div class="title h3 space-min-bottom">
-					Download the PDF Masterplan with Plot Numbers 
+					Download the PDF Masterplan with Plot Numbers
 				</div>
-				<button class="button button-large fill-green">Download Now</button>
+				<a class="button button-large fill-green js_download_masterplan" data-c="test-trac-2" target="_blank" data-href="">Download Now</a>
 			</div>
 		</div>
 		<div class="local-modal-box">
@@ -305,7 +343,45 @@ require_once __DIR__ . '/../inc/above.php';
 			<div class="container">
 				<div class="row">
 					<div class="form-card fill-light space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas enim commodi, corrupti consequuntur recusandae unde, eum nisi cupiditate veritatis rerum, voluptates illo repellendus. Vel est illo eum consectetur ipsam quas?
+						<!-- Phone Trap form -->
+						<form class="js_phone_form">
+							<div class="form-row columns small-12 _medium-6" style="position: relative">
+								<label><span class="label inline text-neutral-1 text-uppercase">Mobile Number</span></label>
+								<div class="phone-trap minimal phone-number">
+									<div class="block prefix-group" style="position: relative">
+										<select class="js_phone_country_code" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0">
+											<?php include __DIR__ . '/../inc/phone-country-codes.php' ?>
+										</select>
+										<input class="prefix js_phone_country_code_label button" value="+91" style="pointer-events: none; width: 100%;">
+									</div>
+									<input class="phone block" type="text" name="phone-number">
+									<label class="submit block">
+										<span class="hidden label inline text-neutral-1 text-uppercase">Submit</span>
+										<button class="button block">→</button>
+									</label>
+								</div>
+							</div>
+						</form>
+						<!-- OTP form -->
+						<form class="js_otp_form" style="display: none;">
+							<div class="form-row columns small-12 _medium-6">
+								<div class="otp-trap minimal">
+									<label class="block">
+										<span class="label inline text-neutral-1 text-uppercase">Enter the OTP</span>
+										<input class="otp block" type="text" name="otp">
+									</label>
+									<label class="submit block">
+										<span class="invisible label inline text-neutral-1 text-uppercase">Submit</span>
+										<button class="button block">→</button>
+									</label>
+								</div>
+							</div>
+							<br>
+							<div class="form-row columns small-12 large-6 clearfix hidden">
+								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-left" tabindex="-1">Re-send OTP</div>
+								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-right" tabindex="-1">Enter different number</div>
+							</div>
+						</form>
 					</div>
 					<!-- Local Modal Close Button -->
 					<div class="button local-modal-close fill-red js_local_modal_close" style="font-size: 35px;">&times;</div>
