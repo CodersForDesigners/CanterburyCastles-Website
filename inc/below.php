@@ -18,21 +18,21 @@
 							<form class="js_contact_form ga_form" data-c="test-trac-3">
 								<div class="form-row space-min-bottom">
 									<label class="visuallyhidden">Name</label>
-									<input class="form-field input-large block" type="text" name="name" placeholder="Name" data-name="name">
+									<input class="form-field input-large block" type="text" name="name" placeholder="Enter Full Name" data-name="name">
 								</div>
 								<!-- <div class="form-row space-min-bottom">
 									<label class="visuallyhidden">Email</label>
 									<input class="form-field input-large block js_email" type="email" placeholder="Email">
 								</div> -->
-								<div class="form-row space-min-bottom">
-									<label class="visuallyhidden">Mobile</label>
+								<div class="phone-trap phone-number form-row space-min-bottom">
+									<label class="visuallyhidden">Mobile Number</label>
 									<div class="block prefix-group" style="position: relative">
 										<select class="form-field input-large block js_phone_country_code" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0">
 											<?php include __DIR__ . '/../inc/phone-country-codes.php' ?>
 										</select>
-										<input class="prefix js_phone_country_code_label button" value="+91" style="pointer-events: none; width: 100%;">
+										<input class="prefix js_phone_country_code_label button button-large input-text fill-dark" value="+91" style="pointer-events: none; width: 100%;">
 									</div>
-									<input class="form-field input-large block" type="tel" name="phone-number" placeholder="Mobile">
+									<input class="form-field input-large block" type="tel" name="phone-number" placeholder="Enter Mobile Number">
 								</div>
 								<div class="form-row space-min-bottom">
 									<label class="visuallyhidden">Budget</label>
@@ -52,19 +52,19 @@
 							<!-- OTP form -->
 							<form class="js_otp_form" style="display: none;">
 								<div class="form-row columns small-12 _medium-6">
-									<div class="otp-trap minimal">
-										<label class="block">
+									<div class="otp-trap">
+										<label class="block text-left">
 											<span class="label inline text-neutral-1 text-uppercase">Enter the OTP</span>
 											<input class="otp block" type="text" name="otp">
 										</label>
 										<label class="submit block">
 											<span class="invisible label inline text-neutral-1 text-uppercase">Submit</span>
-											<button class="button block">→</button>
+											<button class="button button-large block">Submit</button>
 										</label>
 									</div>
 								</div>
 								<br>
-								<div class="form-row columns small-12 large-6 clearfix hidden">
+								<div class="form-row columns small-12 clearfix">
 									<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-left" tabindex="-1">Re-send OTP</div>
 									<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-right" tabindex="-1">Enter different number</div>
 								</div>

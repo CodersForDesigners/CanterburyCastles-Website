@@ -371,6 +371,7 @@ button:focus,
  *
  */
 
+.input-text,
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -429,6 +430,7 @@ select {
 }
 
 @media( min-width: 640px )  {
+	.input-text,
 	input[type="email"],
 	input[type="number"],
 	input[type="search"],
@@ -453,6 +455,7 @@ select {
 	}
 }
 @media( min-width: 1040px ) {
+	.input-text,
 	input[type="email"],
 	input[type="number"],
 	input[type="search"],
@@ -477,6 +480,7 @@ select {
 	}
 }
 @media( min-width: 1480px ) {
+	.input-text,
 	input[type="email"],
 	input[type="number"],
 	input[type="search"],
@@ -852,3 +856,44 @@ body.host .highlight-line  { background-color: var(--magenta); }
 		width: var(--space-three-quarter);
 	}
 }
+
+
+
+
+
+
+/* -- Phone Trap -- */
+.phone-trap.phone-number {
+	display: flex;
+	align-items: center;
+
+}
+.phone-trap.phone-number .prefix-group {
+	width: var(--space-one);
+}
+.phone-trap.phone-number .prefix {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.phone-trap.phone-number .phone {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	/*width: 100%;*/
+}
+
+.phone-trap.phone-number .submit {
+}
+
+@media( min-width: 640px )  {}
+@media( min-width: 1040px ) {
+	.phone-trap.phone-number .prefix-group {
+		width: var(--space-one);
+	}
+}
+@media( min-width: 1480px ) {}
+
+
+
+
