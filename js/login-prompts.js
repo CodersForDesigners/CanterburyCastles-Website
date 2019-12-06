@@ -233,15 +233,15 @@ loginPrompts.investment.on( "prepare", function ( event ) {
 
 
 /*
+ * -/-/-/-/-/-/-/-
  * Aerial Section
+ * -/-/-/-/-/-/-/-
  */
-loginPrompts.aerial = new __.LoginPrompt( "Masterplan", $( ".qpid_login_site.js_aerial_section" ) );
-loginPrompts.aerial.triggerFlowOn( "click", ".js_download_masterplan" );
-loginPrompts.aerial.on( "requirePhone", function ( event ) {
+// The following functions are used across 5 phone traps
+function aerialRequirePhone ( event ) {
 	this.$site.addClass( "open" );
-} );
-// Since the phone number is already provided in the contact form, simply submit it programmatically
-loginPrompts.aerial.on( "phoneSubmit", function ( event ) {
+}
+function aerialPhoneSubmit ( event ) {
 	var loginPrompt = this;
 	var $form = $( event.target ).closest( "form" );
 
@@ -300,9 +300,8 @@ loginPrompts.aerial.on( "phoneSubmit", function ( event ) {
 				} )
 		} );
 
-} );
-// When the phone number is to be submitted
-loginPrompts.aerial.on( "requireOTP", function ( event, phoneNumber ) {
+}
+function aerialRequireOTP ( event, phoneNumber ) {
 	var loginPrompt = this;
 	disableForm( loginPrompt.$phoneForm );
 	__.tempUser.requestOTP( loginPrompt.context )
@@ -317,21 +316,77 @@ loginPrompts.aerial.on( "requireOTP", function ( event, phoneNumber ) {
 			alert( e.message );
 			enableForm( loginPrompt.$phoneForm );
 		} )
-} );
-// When the OTP is required
-loginPrompts.aerial.on( "OTPSubmit", onOTPSubmit );
-loginPrompts.aerial.on( "OTPError", function ( e ) {
+}
+function aerialAlert ( e ) {
 	alert( e.message );
-} );
-loginPrompts.aerial.on( "OTPVerified", onOTPVerified );
-// When the user is logged in
-loginPrompts.aerial.on( "login", onLogin );
-// Prepare the data
-loginPrompts.aerial.on( "prepare", function ( event ) {
+}
+function aerialPrepare ( event ) {
 	var loginPrompt = this;
 	var $triggerElement = $( loginPrompt.triggerElement );
 	if ( $triggerElement.is( "a" ) )
 		$triggerElement.attr( "href", $triggerElement.data( "href" ) );
+}
+
+
+// The "Download Masterplan" button
+loginPrompts.downloadMasterplan = new __.LoginPrompt( "Masterplan", $( ".qpid_login_site.js_aerial_section" ) );
+loginPrompts.downloadMasterplan.triggerFlowOn( "click", ".js_download_masterplan" );
+loginPrompts.downloadMasterplan.on( "requirePhone", function ( event ) {
+	this.$site.find( ".js_trap_heading" ).text( "Download PDF Masterplan" );
+	this.$OTPForm.find( "[ type = 'submit' ]" ).text( "Download" );
+	this.$site.addClass( "open" );
+} );
+	// Since the phone number is already provided in the contact form, simply submit it programmatically
+loginPrompts.downloadMasterplan.on( "phoneSubmit", aerialPhoneSubmit );
+	// When the phone number is to be submitted
+loginPrompts.downloadMasterplan.on( "requireOTP", aerialRequireOTP );
+	// When the OTP is required
+loginPrompts.downloadMasterplan.on( "OTPSubmit", onOTPSubmit );
+loginPrompts.downloadMasterplan.on( "OTPError", aerialAlert );
+loginPrompts.downloadMasterplan.on( "OTPVerified", onOTPVerified );
+	// When the user is logged in
+loginPrompts.downloadMasterplan.on( "login", onLogin );
+	// Prepare the data
+loginPrompts.downloadMasterplan.on( "prepare", aerialPrepare );
+
+
+// The "Get Quote for Plot 886" button
+loginPrompts.quoteFor886 = new __.LoginPrompt( "Quote for Plot 886", $( ".qpid_login_site.js_aerial_section" ) );
+loginPrompts.quoteFor886.triggerFlowOn( "click", ".js_request_quote[ data-unit = '886' ]" );
+loginPrompts.quoteFor886.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.$site.find( ".js_trap_heading" ).text( "Request Quote for #886" );
+	loginPrompts.downloadMasterplan.$OTPForm.find( "[ type = 'submit' ]" ).text( "Request Quote" );
+	loginPrompts.downloadMasterplan.$site.addClass( "open" );
+} );
+
+
+// The "Get Quote for Plot 910" button
+loginPrompts.quoteFor910 = new __.LoginPrompt( "Quote for Plot 910", $( ".qpid_login_site.js_aerial_section" ) );
+loginPrompts.quoteFor910.triggerFlowOn( "click", ".js_request_quote[ data-unit = '910' ]" );
+loginPrompts.quoteFor910.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.$site.find( ".js_trap_heading" ).text( "Request Quote for #910" );
+	loginPrompts.downloadMasterplan.$OTPForm.find( "[ type = 'submit' ]" ).text( "Request Quote" );
+	loginPrompts.downloadMasterplan.$site.addClass( "open" );
+} );
+
+
+// The "Get Quote for Plot 902" button
+loginPrompts.quoteFor902 = new __.LoginPrompt( "Quote for Plot 902", $( ".qpid_login_site.js_aerial_section" ) );
+loginPrompts.quoteFor902.triggerFlowOn( "click", ".js_request_quote[ data-unit = '902' ]" );
+loginPrompts.quoteFor902.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.$site.find( ".js_trap_heading" ).text( "Request Quote for #902" );
+	loginPrompts.downloadMasterplan.$OTPForm.find( "[ type = 'submit' ]" ).text( "Request Quote" );
+	loginPrompts.downloadMasterplan.$site.addClass( "open" );
+} );
+
+
+// The "Get Quote for Plot 202" button
+loginPrompts.quoteFor202 = new __.LoginPrompt( "Quote for Plot 202", $( ".qpid_login_site.js_aerial_section" ) );
+loginPrompts.quoteFor202.triggerFlowOn( "click", ".js_request_quote[ data-unit = '202' ]" );
+loginPrompts.quoteFor202.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.$site.find( ".js_trap_heading" ).text( "Request Quote for #202" );
+	loginPrompts.downloadMasterplan.$OTPForm.find( "[ type = 'submit' ]" ).text( "Request Quote" );
+	loginPrompts.downloadMasterplan.$site.addClass( "open" );
 } );
 
 
