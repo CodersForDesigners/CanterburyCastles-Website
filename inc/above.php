@@ -38,6 +38,10 @@ http_response_code( 200 );
 			echo getContent( '', 'arbitrary_code_body_top' );
 		?>
 
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV27JR2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
 	<!--  ★  MARKUP GOES HERE  ★  -->
 
 	<div id="page-wrapper"><!-- Page Wrapper -->
