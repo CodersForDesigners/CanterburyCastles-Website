@@ -94,9 +94,9 @@ LoginPrompt.prototype.on = function on ( event, fn ) {
 	else
 		this.eventHandlers[ event ] = [ fn ];
 };
-LoginPrompt.prototype.off = function on ( event ) {
-	if ( this.eventHandlers[ event ] )
-		this.eventHandlers[ event ] = [ ];
+LoginPrompt.prototype.off = function off ( event ) {
+	if ( Array.isArray( this.eventHandlers[ event ] ) )
+		this.eventHandlers[ event ].length = 0;
 };
 LoginPrompt.prototype.trigger = function trigger ( event, ...args ) {
 
