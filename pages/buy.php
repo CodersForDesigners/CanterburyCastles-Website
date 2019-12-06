@@ -86,7 +86,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="title h3">
 					If you’re in a hurry download a PDF Brochure instead
 				</div>
-				<a class="button button-large fill-green js_download_brochure" data-c="test-trac-1" target="_blank" data-href="">Download Now</a>
+				<a class="button button-large fill-green js_download_brochure" data-c="test-trac-1" target="_blank" data-href="/download/brochure.pdf">Download Now</a>
 			</div>
 		</div>
 		<div class="local-modal-box">
@@ -341,7 +341,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="title h3 space-min-bottom">
 					Download the PDF Masterplan with Plot Numbers
 				</div>
-				<a class="button button-large fill-green js_download_masterplan" data-c="test-trac-2" target="_blank" data-href="">Download Now</a>
+				<a class="button button-large fill-green js_download_masterplan" data-c="test-trac-2" target="_blank" data-href="/download/masterplan.pdf">Download Now</a>
 			</div>
 		</div>
 		<div class="local-modal-box">
