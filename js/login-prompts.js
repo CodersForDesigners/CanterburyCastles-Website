@@ -129,7 +129,7 @@ var loginPrompts = { };
 /*
  * Investment Potential
  */
-loginPrompts.investment = new __.LoginPrompt( "Investment Potential", $( ".qpid_login_site.js_investment_section" ) );
+loginPrompts.investment = new __.LoginPrompt( "Brochure", $( ".qpid_login_site.js_investment_section" ) );
 loginPrompts.investment.triggerFlowOn( "click", ".js_download_brochure" );
 loginPrompts.investment.on( "requirePhone", function ( event ) {
 	this.$site.addClass( "open" );
@@ -226,6 +226,8 @@ loginPrompts.investment.on( "prepare", function ( event ) {
 	var $triggerElement = $( loginPrompt.triggerElement );
 	if ( $triggerElement.is( "a" ) )
 		$triggerElement.attr( "href", $triggerElement.data( "href" ) );
+	__.user.isInterestedIn( "Brochure" );
+	__.user.update();
 } );
 
 
@@ -325,6 +327,8 @@ function aerialPrepare ( event ) {
 	var $triggerElement = $( loginPrompt.triggerElement );
 	if ( $triggerElement.is( "a" ) )
 		$triggerElement.attr( "href", $triggerElement.data( "href" ) );
+	__.user.isInterestedIn( "Masterplan" );
+	__.user.update();
 }
 
 
