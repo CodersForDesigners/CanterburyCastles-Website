@@ -318,22 +318,22 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="row space-min-bottom ">
 					<div class="columns inline-bottom small-12 large-3 h3">№ 886</div>
 					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">1200sft</span> - North Facing - Plot Value <span class="strong text-yellow">24 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block">get a quote</button></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="886">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
 					<div class="columns inline-bottom small-12 large-3 h3">№ 910</div>
 					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">2594sft</span> - S-West Facing - Plot Value <span class="strong text-yellow">54 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block">get a quote</button></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="910">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
 					<div class="columns inline-bottom small-12 large-3 h3">№ 902</div>
 					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">3468sft</span> - N-West Facing - Plot Value <span class="strong text-yellow">73 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block">get a quote</button></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="902">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
 					<div class="columns inline-bottom small-12 large-3 h3">№ 202</div>
 					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">4104sft</span> - S-West Facing - Plot Value <span class="strong text-yellow">85 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block">get a quote</button></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="202">get a quote</button></div>
 				</div>
 			</div>
 			<div class="action-masterplan column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1 space-quarter-top">
@@ -350,7 +350,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="row">
 					<div class="form-card fill-dark space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
 						<!-- Title -->
-						<div class="h4 space-half-bottom">Download PDF Masterplan</div>
+						<div class="h4 space-half-bottom js_trap_heading">Download PDF Masterplan</div>
 						<!-- Phone Trap form -->
 						<form class="js_phone_form">
 							<div class="form-row columns small-12" style="position: relative">
@@ -384,7 +384,7 @@ require_once __DIR__ . '/../inc/above.php';
 									</label>
 									<label class="submit block">
 										<span class="invisible label inline text-neutral-1 text-uppercase">Submit</span>
-										<button class="button block fill-green">Download</button>
+										<button class="button block fill-green" type="submit">Download</button>
 									</label>
 								</div>
 							</div>

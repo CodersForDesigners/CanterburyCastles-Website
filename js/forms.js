@@ -183,14 +183,24 @@ function enableForm ( $form, message ) {
 
 /*
  * -------------------------------\
- * Investment Potential Form
+ * Contact Form
  * -------------------------------|
  */
-// On clicking the close button
-$( document ).on( "click", ".js_local_modal_close", function ( event ) {
-	$( event.target ).closest( ".js_local_modal" ).removeClass( "open" );
+// On submission of the form
+$( document ).on( "click", ".js_request_quote", function ( event ) {
+	$target = $( event.currentTarget );
+	$target.addClass( "no-pointer" ).prop( "disabled", true );
+	var plot = $target.data( "unit" );
+	// Add this plot to the person's interests
+	__.user.isInterestedIn( "Plot #" + plot );
+	__.user.update();
 } );
 
+/*
+ * -------------------------------\
+ * Contact Form
+ * -------------------------------|
+ */
 // On submission of the form
 $( document ).on( "submit", ".js_contact_form", function ( event ) {
 
