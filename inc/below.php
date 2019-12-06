@@ -202,8 +202,24 @@
 
 	<script type="text/javascript">
 
+		/*
+		 *
+		 * Log the Person's Website Visit
+		 *
+		 */
 		$( function () {
-			//
+
+			var user = __CUPID.utils.getUser();
+			if ( user ) {
+				setTimeout( function () {
+					__CUPID.utils.getAnalyticsId()
+						.then( function ( deviceId ) {
+							user.hasDeviceId( deviceId );
+							user.isOnWebsite();
+						} )
+				}, 1500 );
+			}
+
 		} );
 
 	</script>
