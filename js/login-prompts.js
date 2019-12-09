@@ -96,7 +96,7 @@ function onOTPVerified () {
 }
 function trackConversion ( loginPrompt ) {
 	// Track the conversion
-	var conversionUrl = $( loginPrompt.triggerElement ).data( "c" );
+	var conversionUrl = loginPrompt.trackingURL || $( loginPrompt.triggerElement ).data( "c" );
 	__.utils.trackPageVisit( conversionUrl );
 }
 function onLogin () {
