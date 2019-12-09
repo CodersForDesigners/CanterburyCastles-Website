@@ -215,7 +215,8 @@
 					__CUPID.utils.getAnalyticsId()
 						.then( function ( deviceId ) {
 							user.hasDeviceId( deviceId );
-							user.isOnWebsite();
+							var where = window.location.pathname;
+							user.isOnWebsite( where );
 						} )
 				}, 1500 );
 			}
