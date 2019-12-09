@@ -502,10 +502,6 @@ loginPrompts.contact.on( "OTPVerified", onOTPVerified );
 loginPrompts.contact.on( "login", onLogin );
 loginPrompts.contact.on( "login", function () {
 	var loginPrompt = this;
-	$( loginPrompt.triggerElement ).trigger( loginPrompt.triggerEvent );
-} );
-loginPrompts.contact.on( "login", function () {
-	var loginPrompt = this;
 	var $contactForm = loginPrompt.$site.find( ".js_contact_form" );
 	$( loginPrompt.$OTPForm ).slideUp( 500, function () {
 		$contactForm.slideDown( 500 );
