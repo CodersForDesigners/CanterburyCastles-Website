@@ -336,6 +336,7 @@ function aerialPrepare ( event ) {
 loginPrompts.downloadMasterplan = new __.LoginPrompt( "Masterplan", $( ".qpid_login_site.js_aerial_section" ) );
 loginPrompts.downloadMasterplan.triggerFlowOn( "click", ".js_download_masterplan" );
 loginPrompts.downloadMasterplan.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.trackingURL = "buy-masterplan";
 	this.$site.find( ".js_trap_heading" ).text( "Download PDF Masterplan" );
 	this.$OTPForm.find( "[ type = 'submit' ]" ).text( "Download" );
 	this.$site.addClass( "open" );
@@ -358,6 +359,7 @@ loginPrompts.downloadMasterplan.on( "prepare", aerialPrepare );
 loginPrompts.quoteFor886 = new __.LoginPrompt( "Quote for Plot 886", $( ".qpid_login_site.js_aerial_section" ) );
 loginPrompts.quoteFor886.triggerFlowOn( "click", ".js_request_quote[ data-unit = '886' ]" );
 loginPrompts.quoteFor886.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.trackingURL = $( ".js_request_quote[ data-unit = '886' ]" ).data( "c" );
 	loginPrompts.downloadMasterplan.$site.find( ".js_trap_heading" ).text( "Request Quote for #886" );
 	loginPrompts.downloadMasterplan.$OTPForm.find( "[ type = 'submit' ]" ).text( "Request Quote" );
 	loginPrompts.downloadMasterplan.$site.addClass( "open" );
@@ -368,6 +370,7 @@ loginPrompts.quoteFor886.on( "requirePhone", function ( event ) {
 loginPrompts.quoteFor910 = new __.LoginPrompt( "Quote for Plot 910", $( ".qpid_login_site.js_aerial_section" ) );
 loginPrompts.quoteFor910.triggerFlowOn( "click", ".js_request_quote[ data-unit = '910' ]" );
 loginPrompts.quoteFor910.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.trackingURL = $( ".js_request_quote[ data-unit = '910' ]" ).data( "c" );
 	loginPrompts.downloadMasterplan.$site.find( ".js_trap_heading" ).text( "Request Quote for #910" );
 	loginPrompts.downloadMasterplan.$OTPForm.find( "[ type = 'submit' ]" ).text( "Request Quote" );
 	loginPrompts.downloadMasterplan.$site.addClass( "open" );
@@ -378,6 +381,7 @@ loginPrompts.quoteFor910.on( "requirePhone", function ( event ) {
 loginPrompts.quoteFor902 = new __.LoginPrompt( "Quote for Plot 902", $( ".qpid_login_site.js_aerial_section" ) );
 loginPrompts.quoteFor902.triggerFlowOn( "click", ".js_request_quote[ data-unit = '902' ]" );
 loginPrompts.quoteFor902.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.trackingURL = $( ".js_request_quote[ data-unit = '902' ]" ).data( "c" );
 	loginPrompts.downloadMasterplan.$site.find( ".js_trap_heading" ).text( "Request Quote for #902" );
 	loginPrompts.downloadMasterplan.$OTPForm.find( "[ type = 'submit' ]" ).text( "Request Quote" );
 	loginPrompts.downloadMasterplan.$site.addClass( "open" );
@@ -388,6 +392,7 @@ loginPrompts.quoteFor902.on( "requirePhone", function ( event ) {
 loginPrompts.quoteFor202 = new __.LoginPrompt( "Quote for Plot 202", $( ".qpid_login_site.js_aerial_section" ) );
 loginPrompts.quoteFor202.triggerFlowOn( "click", ".js_request_quote[ data-unit = '202' ]" );
 loginPrompts.quoteFor202.on( "requirePhone", function ( event ) {
+	loginPrompts.downloadMasterplan.trackingURL = $( ".js_request_quote[ data-unit = '202' ]" ).data( "c" );
 	loginPrompts.downloadMasterplan.$site.find( ".js_trap_heading" ).text( "Request Quote for #202" );
 	loginPrompts.downloadMasterplan.$OTPForm.find( "[ type = 'submit' ]" ).text( "Request Quote" );
 	loginPrompts.downloadMasterplan.$site.addClass( "open" );

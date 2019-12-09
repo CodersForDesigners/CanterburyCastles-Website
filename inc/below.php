@@ -15,7 +15,7 @@
 
 						<div class="contact-form">
 							<!-- Main form -->
-							<form class="js_contact_form ga_form" data-c="test-trac-3">
+							<form class="js_contact_form ga_form" data-c="<?php echo $urlSlug ?>-enquire-now">
 								<div class="form-row space-min-bottom">
 									<label class="visuallyhidden">Name</label>
 									<input class="form-field input-large block" type="text" name="name" placeholder="Enter Full Name" data-name="name">

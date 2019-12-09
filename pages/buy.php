@@ -86,7 +86,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="title h3">
 					If you’re in a hurry download a PDF Brochure instead
 				</div>
-				<a class="button button-large fill-green js_download_brochure" data-c="test-trac-1" target="_blank" data-href="/download/brochure.pdf">Download Now</a>
+				<a class="button button-large fill-green js_download_brochure" data-c="buy-brochure" target="_blank" data-href="/download/brochure.pdf">Download Now</a>
 			</div>
 		</div>
 		<div class="local-modal-box">
@@ -318,22 +318,22 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="row space-min-bottom ">
 					<div class="columns inline-bottom small-12 large-3 h3">№ 886</div>
 					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">1200sft</span> - North Facing - Plot Value <span class="strong text-yellow">24 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="886">get a quote</button></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="886" data-c="buy-get-a-quote">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
 					<div class="columns inline-bottom small-12 large-3 h3">№ 910</div>
 					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">2594sft</span> - S-West Facing - Plot Value <span class="strong text-yellow">54 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="910">get a quote</button></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="910" data-c="buy-get-a-quote">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
 					<div class="columns inline-bottom small-12 large-3 h3">№ 902</div>
 					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">3468sft</span> - N-West Facing - Plot Value <span class="strong text-yellow">73 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="902">get a quote</button></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="902" data-c="buy-get-a-quote">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
 					<div class="columns inline-bottom small-12 large-3 h3">№ 202</div>
 					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">4104sft</span> - S-West Facing - Plot Value <span class="strong text-yellow">85 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="202">get a quote</button></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="202" data-c="buy-get-a-quote">get a quote</button></div>
 				</div>
 			</div>
 			<div class="action-masterplan column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1 space-quarter-top">
@@ -341,7 +341,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="title h3 space-min-bottom">
 					Download the PDF Masterplan with Plot Numbers
 				</div>
-				<a class="button button-large fill-green js_download_masterplan" data-c="test-trac-2" target="_blank" data-href="/download/masterplan.pdf">Download Now</a>
+				<a class="button button-large fill-green js_download_masterplan" data-c="buy-masterplan" target="_blank" data-href="/download/masterplan.pdf">Download Now</a>
 			</div>
 		</div>
 		<div class="local-modal-box">
