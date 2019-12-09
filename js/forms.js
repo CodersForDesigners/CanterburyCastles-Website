@@ -263,7 +263,7 @@ $( document ).on( "submit", ".js_contact_form", function ( event ) {
 	}, { } );
 	__.user.name = data.name;
 	__.user.emailAddress = data.emailAddress;
-	__.user.isInterestedIn( "Budget — " + data.budget );
+	__.user.isInterestedIn( "Budget - " + data.budget );
 
 
 	// /* -----
