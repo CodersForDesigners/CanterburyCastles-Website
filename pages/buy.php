@@ -51,7 +51,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- investment section -->
-	<section class="investment-section local-modal qpid_login_site js_investment_section">
+	<section class="investment-section no-overflow local-modal qpid_login_site js_investment_section">
 		<div class="container row">
 			<div class="column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h2">
