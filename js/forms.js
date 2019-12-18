@@ -194,6 +194,7 @@ $( document ).on( "click", ".js_request_quote", function ( event ) {
 	// Add this plot to the person's interests
 	__.user.isInterestedIn( "Plot #" + plot );
 	__.user.update();
+	$target.text( "Request sent" );
 } );
 
 /*
