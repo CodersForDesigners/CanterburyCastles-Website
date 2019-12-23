@@ -84,6 +84,7 @@ function submitPersonIngestion ( $data ) {
 		'entry.1212525387' => $data[ 'when' ],
 		'entry.1565423970' => $data[ 'id' ],
 		'entry.1578729276' => $data[ 'phoneNumber' ],
+		'entry.387812352' => $data[ 'name' ],
 		'entry.233670921' => $data[ 'emailAddress' ],
 		'entry.1395013542' => $data[ 'sourceMedium' ],
 		'entry.1119604257' => $data[ 'sourcePoint' ],
