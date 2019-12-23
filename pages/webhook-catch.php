@@ -54,6 +54,7 @@ $data = [
 	'when' => $when,
 	'id' => $input->id,
 	'phoneNumber' => $input->phoneNumber,
+	'name' => $input->name,
 	'emailAddress' => $emailAddresses,
 	'verified' => $input->verified,
 	'sourceMedium' => $input->source->medium,
