@@ -134,7 +134,7 @@ require_once __DIR__ . '/../inc/above.php';
 								</div>
 							</div>
 							<br>
-							<div class="form-row columns small-12 clearfix">
+							<div class="form-row columns small-12 clearfix hidden">
 								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-left" tabindex="-1">Re-send OTP</div>
 								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-right" tabindex="-1">Enter different number</div>
 							</div>
@@ -389,7 +389,7 @@ require_once __DIR__ . '/../inc/above.php';
 								</div>
 							</div>
 							<br>
-							<div class="form-row columns small-12 clearfix">
+							<div class="form-row columns small-12 clearfix hidden">
 								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-left" tabindex="-1">Re-send OTP</div>
 								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-right" tabindex="-1">Enter different number</div>
 							</div>
