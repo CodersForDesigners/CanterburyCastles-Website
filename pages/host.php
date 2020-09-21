@@ -51,6 +51,37 @@ require_once __DIR__ . '/../inc/above.php';
 		</div>
 	</section>
 
+	<!-- getaway section -->
+	<section class="getaway-section">
+		<div class="container row">
+			<div class="column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
+				<!-- video -->
+				<div class="getaway-video">
+					<!-- video embed -->
+					<div class="video-embed js_video_embed" data-src="ve1v996u89M">
+						<div class="video-loading-indicator"></div>
+					</div>
+				</div>
+			</div>
+			<div class="column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
+				<div class="title h2">
+					Lorem ipsum, dolor sit amet, consectetur adipisicing elit.
+				</div>
+				<div class="description h6">
+					<div class="highlight-line"></div>
+					<!-- <div class="social-buttons">
+						<a href=""><img src="/media/social-facebook.svg<?php echo $ver?>"></a>
+						<a href=""><img src="/media/social-twitter.svg<?php echo $ver?>"></a>
+						<a href=""><img src="/media/social-google.svg<?php echo $ver?>"></a>
+					</div> -->
+					<div>
+						Watch this space for more.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Modal JS -->
 	<script type="text/javascript" src="/js/modules/modal.js<?php echo $ver?>"></script>
 

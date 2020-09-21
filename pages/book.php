@@ -54,7 +54,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- weekend video section -->
-	<section class="weekend-video-section">
+	<section class="hidden weekend-video-section">
 		<div class="section-video video-embed video-embed-bg js_video_embed js_video_get_player" data-src="H3WLg3nXtuI" data-loop="true" data-autoplay="true" style="padding-top: 33.75%;">
 			<div class="video-embed-placeholder" style="background-image: url( '/media/video-thumb-3.jpg<?php echo $ver; ?>' );"></div>
 			<!-- <div class="video-loading-indicator"></div> -->
