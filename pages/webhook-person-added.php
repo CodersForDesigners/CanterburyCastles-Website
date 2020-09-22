@@ -50,7 +50,7 @@ $when = CFD\DateTime::getSpreadsheetDateFromISO8601( $input->when );
 $emailAddresses = empty( $input->emailAddresses ) ? '' : implode( ', ', $input->emailAddresses );
 $interests = empty( $input->interests ) ? '' : implode( ', ', $input->interests );
 $sourcePoint = $input->source->point ?? $input->agent->name ?? $input->agent->phoneNumber ?? '';
-$recordingURL = $input->recordingURL ?? '';
+$callRecording = $input->recordingURL ?? '';
 # Shape the data
 $data = [
 	'when' => $when,
@@ -62,7 +62,7 @@ $data = [
 	'sourceMedium' => $input->source->medium,
 	'sourcePoint' => $sourcePoint,
 	'interests' => $interests,
-	'callRecording' => $recordingURL
+	'callRecording' => $callRecording
 ];
 GoogleForms\submitPerson( $data );
 // $spreadsheet->addRow( $data );

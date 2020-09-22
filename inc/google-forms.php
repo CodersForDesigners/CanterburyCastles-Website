@@ -76,7 +76,7 @@ function getAPIResponse ( $endpoint, $method, $data = [ ] ) {
  * Submit a Google Form
  *
  */
-function submitPersonIngestion ( $data ) {
+function submitPerson ( $data ) {
 
 	$endpoint = 'https://docs.google.com/forms/d/e/'
 			. '1FAIpQLScq7ZjyrApVgGlMZMXWLEd2GBXzWYkHM8EeuFJOOvrYreYhtA/formResponse';
@@ -90,6 +90,28 @@ function submitPersonIngestion ( $data ) {
 		'entry.1119604257' => $data[ 'sourcePoint' ],
 		'entry.39439247' => $data[ 'interests' ],
 		'entry.2061318693' => $data[ 'callRecording' ]
+	];
+
+	$response = getAPIResponse( $endpoint, 'POST', $requestBody );
+
+	return $response;
+
+}
+
+function submitPersonActivity ( $data ) {
+
+	$endpoint = 'https://docs.google.com/forms/d/e/'
+			. '1FAIpQLSdEj7wJ4RIEODQFx-pciwzt5WgzFulkCrlyD1mwokR8h9AT2Q/formResponse';
+	$requestBody = [
+		'entry.1192185748' => $data[ 'when' ],
+		'entry.1792821482' => $data[ 'id' ],
+		'entry.487995029' => $data[ 'phoneNumber' ],
+		'entry.1605323075' => $data[ 'verified' ],
+		'entry.1025227529' => $data[ 'sourceMedium' ],
+		'entry.1771467168' => $data[ 'sourcePoint' ],
+		'entry.1911175480' => $data[ 'interests' ],
+		'entry.433341220' => $data[ 'duration' ],
+		'entry.2105119295' => $data[ 'callRecording' ]
 	];
 
 	$response = getAPIResponse( $endpoint, 'POST', $requestBody );

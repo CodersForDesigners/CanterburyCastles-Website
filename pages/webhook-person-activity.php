@@ -26,6 +26,7 @@ $json = file_get_contents( 'php://input' );
 $error = null;
 try {
 	$input = json_decode( $json );
+	$event = $input->event;
 	$input = $input->data;
 }
 catch ( \Exception $e ) {
@@ -47,25 +48,35 @@ require_once __DIR__ . '/../inc/google-forms.php';
  \-------------------------------------- */
 # Interpret the data
 $when = CFD\DateTime::getSpreadsheetDateFromISO8601( $input->when );
-$emailAddresses = empty( $input->emailAddresses ) ? '' : implode( ', ', $input->emailAddresses );
+$sourceMedium = '';
+$sourcePoint = '';
+if ( $event === 'person/phoned/' ) {
+	$sourceMedium = 'Phone';
+	if (
+		! empty( $input->agent )
+		and ! empty( $input->agent->phoneNumber )
+	)
+		$sourcePoint = $input->agent->phoneNumber;
+}
+else if ( $event === 'person/on/website' ) {
+	$sourceMedium = 'Website';
+	if ( ! empty( $input->where ) )
+		$sourcePoint = $input->where;
+}
 $interests = empty( $input->interests ) ? '' : implode( ', ', $input->interests );
-$sourcePoint = $input->source->point ?? $input->agent->name ?? $input->agent->phoneNumber ?? '';
-$recordingURL = $input->recordingURL ?? '';
 # Shape the data
 $data = [
 	'when' => $when,
 	'id' => $input->id,
 	'phoneNumber' => $input->phoneNumber,
-	'name' => $input->name,
-	'emailAddress' => $emailAddresses,
 	'verified' => $input->verified,
-	'sourceMedium' => $input->source->medium,
+	'sourceMedium' => $sourceMedium,
 	'sourcePoint' => $sourcePoint,
 	'interests' => $interests,
-	'callRecording' => $recordingURL
+	'duration' => $input->duration ?? '',
+	'callRecording' => $input->recordingURL ?? ''
 ];
-GoogleForms\submitPerson( $data );
-// $spreadsheet->addRow( $data );
+GoogleForms\submitPersonActivity( $data );
 
 
 
