@@ -65,7 +65,7 @@ require_once __DIR__ . '/../inc/above.php';
 			</div>
 			<div class="column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h2">
-					Lorem ipsum, dolor sit amet, consectetur adipisicing elit.
+					We Hosted Bangalore's biggest backyard festival.
 				</div>
 				<div class="description h6">
 					<div class="highlight-line"></div>
