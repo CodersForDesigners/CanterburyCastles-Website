@@ -187,7 +187,7 @@
 	<!-- <script type="text/javascript" src="/js/modules/device-charge.js<?= $ver ?>"></script> -->
 	<script type="text/javascript" src="/js/modules/menu.js<?= $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/video_embed.js<?= $ver ?>"></script>
-	<script type="text/javascript" src="/js/modules/modal_box.js<?= $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/modals.js<?= $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/form.js<?= $ver ?>"></script>
 	<!-- <script type="text/javascript" src="/js/modules/disclaimer.js"></script> -->
 
