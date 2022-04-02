@@ -9,7 +9,7 @@
 
 					<div id="contact" class="contact-card fill-dark column large-6 large-offset-3 medium-8 medium-offset-2 small-12 text-center">
 						<div class="title h5">Get in Touch</div>
-						<a href="tel:+916366448688" class="phone h2 block">Call +91 63664 48688</a>
+						<a href="tel:+917669611010" class="phone h2 block">Call +91 76696 11010</a>
 
 						<div class="or"><span>OR</span></div>
 
