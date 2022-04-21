@@ -469,6 +469,11 @@
 	line-height: 1.9;
 }
 
+.aerial-section .plot-price button.requested {
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
 .aerial-section .action-masterplan .info {
 	text-align: left;
 }
@@ -488,6 +493,11 @@
 		margin-bottom: 4rem;
 	}
 
+	.aerial-section .plot-price button.requested {
+		padding: 0;
+		font-size: 1rem
+	}
+
 	.aerial-section .action-masterplan img {
 		transform: none;
 	}
@@ -497,6 +507,12 @@
 	.aerial-section {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
+	}
+}
+
+@media ( min-width: 1040px ) {
+	.aerial-section .plot-price button.requested {
+		font-size: 1.2rem
 	}
 }
 

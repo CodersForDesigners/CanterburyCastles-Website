@@ -156,6 +156,24 @@ $pageTitle = getCurrentPageTitle( $links, $baseURL, $siteTitle );
 	- -->
 	<!-- Stylesheet -->
 	<?php require __DIR__ . '/../style.php'; ?>
+
+	<script type="text/javascript">
+
+		window.__THIS = window.__THIS || { };
+		window.__THIS.CONF = {
+			trackingURL: "<?= BFS_TRACKING_URL ?>",
+			cupid: {
+				client: "<?= CUPID_CLIENT ?>",
+				clientSlug: "<?= CUPID_CLIENT_SLUG ?>",
+				sourceMedium: "<?= CUPID_SOURCE_MEDIUM ?>",
+				cupidApiEndpoint: "<?= CUPID_API_ENDPOINT ?>",
+				authCookieName: "<?= CUPID_AUTH_COOKIE_NAME ?>",
+				forceLogoutIfLoggedInBefore: "<?= CUPID_FORCE_LOGOUT_IF_LOGGED_IN_BEFORE ?>"
+			}
+		};
+
+	</script>
+
 	<!-- jQuery 3 -->
 	<script type="text/javascript" src="plugins/jquery/jquery-3.0.0.min.js<?php echo $ver ?>"></script>
 	<!-- Slick Carousel -->

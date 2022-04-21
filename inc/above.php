@@ -1,6 +1,7 @@
 <?php
 
 // Get utility functions
+require_once __DIR__ . '/../conf.php';
 require_once __DIR__ . '/utils.php';
 // Include WordPress for Content Management
 initWordPress();
@@ -11,7 +12,7 @@ require_once __DIR__ . '/lazaro.php';
 /*
  * A version number for versioning assets to invalidate the browser cache
  */
-$ver = '?v=20191209';
+$ver = '?v=20220401';
 
 // Pull some data from the request
 $urlSlug = $_GET[ '_slug' ] ?? null;

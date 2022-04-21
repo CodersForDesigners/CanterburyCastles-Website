@@ -51,7 +51,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- investment section -->
-	<section class="investment-section no-overflow local-modal qpid_login_site js_investment_section">
+	<section class="investment-section no-overflow local-modal js_investment_section">
 		<div class="container row">
 			<div class="column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h2">
@@ -86,7 +86,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="title h3">
 					If you’re in a hurry download a PDF Brochure instead
 				</div>
-				<a class="button button-large fill-green js_download_brochure" data-c="buy-brochure" target="_blank" data-href="/download/brochure.pdf">Download Now</a>
+				<a class="button button-large fill-green js_download_brochure" target="_blank" data-href="/download/brochure.pdf">Download Now</a>
 			</div>
 		</div>
 		<div class="local-modal-box">
@@ -97,7 +97,7 @@ require_once __DIR__ . '/../inc/above.php';
 						<!-- Title -->
 						<div class="h4 space-half-bottom">Download PDF Brochure</div>
 						<!-- Phone Trap form -->
-						<form class="js_phone_form">
+						<form class="js_brochure_form js_phone_form">
 							<div class="form-row columns small-12" style="position: relative">
 								<label><span class="label inline text-neutral-1 text-uppercase">Mobile Number</span></label>
 								<div class="phone-trap phone-number">
@@ -105,7 +105,7 @@ require_once __DIR__ . '/../inc/above.php';
 										<select class="js_phone_country_code" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0">
 											<?php include __DIR__ . '/../inc/phone-country-codes.php' ?>
 										</select>
-										<input class="input-text prefix js_phone_country_code_label button" value="+91" style="pointer-events: none; width: 100%;">
+										<input class="input-text prefix js_phone_country_code_label button" value="+91" style="pointer-events: none; width: 100%;" readonly>
 									</div>
 									<input class="phone block" type="text" name="phone-number" placeholder="Enter Mobile Number">
 								</div>
@@ -114,29 +114,9 @@ require_once __DIR__ . '/../inc/above.php';
 								<div class="phone-trap phone-number">
 									<label class="submit block">
 										<span class="invisible label inline text-neutral-1 text-uppercase">Submit</span>
-										<button class="button block fill-green">Submit</button>
+										<button class="button block fill-green" type="submit">Submit</button>
 									</label>
 								</div>
-							</div>
-						</form>
-						<!-- OTP form -->
-						<form class="js_otp_form" style="display: none;">
-							<div class="form-row columns small-12">
-								<div class="otp-trap">
-									<label class="block">
-										<span class="label inline text-neutral-1 text-uppercase">Enter the OTP</span>
-										<input class="otp block" type="text" name="otp">
-									</label>
-									<label class="submit block">
-										<span class="invisible label inline text-neutral-1 text-uppercase">Submit</span>
-										<button class="button block fill-green">Download</button>
-									</label>
-								</div>
-							</div>
-							<br>
-							<div class="form-row columns small-12 clearfix hidden">
-								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-left" tabindex="-1">Re-send OTP</div>
-								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-right" tabindex="-1">Enter different number</div>
 							</div>
 						</form>
 					</div>
@@ -291,7 +271,7 @@ require_once __DIR__ . '/../inc/above.php';
 
 
 	<!-- aerial section -->
-	<section class="aerial-section no-overflow local-modal qpid_login_site js_aerial_section">
+	<section class="aerial-section no-overflow local-modal js_aerial_section">
 		<div class="container row">
 			<div class="column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<!-- video -->
@@ -341,7 +321,7 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="title h3 space-min-bottom">
 					Download the PDF Masterplan with Plot Numbers
 				</div>
-				<a class="button button-large fill-green js_download_masterplan" data-c="buy-masterplan" target="_blank" data-href="/download/masterplan.pdf">Download Now</a>
+				<a class="button button-large fill-green js_download_masterplan" target="_blank" data-href="/download/masterplan.pdf">Download Now</a>
 			</div>
 		</div>
 		<div class="local-modal-box">
@@ -350,9 +330,9 @@ require_once __DIR__ . '/../inc/above.php';
 				<div class="row">
 					<div class="form-card fill-dark space-half columns small-12 small-offset-0 medium-6 medium-offset-3 large-4 large-offset-4">
 						<!-- Title -->
-						<div class="h4 space-half-bottom js_trap_heading">Download PDF Masterplan</div>
+						<div class="h4 space-half-bottom js_form_heading">Download PDF Masterplan</div>
 						<!-- Phone Trap form -->
-						<form class="js_phone_form">
+						<form class="js_masterplan_and_quotes_form js_phone_form">
 							<div class="form-row columns small-12" style="position: relative">
 								<label><span class="label inline text-neutral-1 text-uppercase">Mobile Number</span></label>
 								<div class="phone-trap phone-number">
@@ -360,7 +340,7 @@ require_once __DIR__ . '/../inc/above.php';
 										<select class="js_phone_country_code" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0">
 											<?php include __DIR__ . '/../inc/phone-country-codes.php' ?>
 										</select>
-										<input class="input-text prefix js_phone_country_code_label button" value="+91" style="pointer-events: none; width: 100%;">
+										<input class="input-text prefix js_phone_country_code_label button" value="+91" style="pointer-events: none; width: 100%;" readonly>
 									</div>
 									<input class="phone block" type="text" name="phone-number" placeholder="Enter Mobile Number">
 								</div>
@@ -372,26 +352,6 @@ require_once __DIR__ . '/../inc/above.php';
 										<button class="button block fill-green">Submit</button>
 									</label>
 								</div>
-							</div>
-						</form>
-						<!-- OTP form -->
-						<form class="js_otp_form" style="display: none;">
-							<div class="form-row columns small-12">
-								<div class="otp-trap">
-									<label class="block">
-										<span class="label inline text-neutral-1 text-uppercase">Enter the OTP</span>
-										<input class="otp block" type="text" name="otp">
-									</label>
-									<label class="submit block">
-										<span class="invisible label inline text-neutral-1 text-uppercase">Submit</span>
-										<button class="button block fill-green" type="submit">Download</button>
-									</label>
-								</div>
-							</div>
-							<br>
-							<div class="form-row columns small-12 clearfix hidden">
-								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-left" tabindex="-1">Re-send OTP</div>
-								<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-right" tabindex="-1">Enter different number</div>
 							</div>
 						</form>
 					</div>
@@ -422,9 +382,6 @@ require_once __DIR__ . '/../inc/above.php';
 		<div class="masterplan"></div>
 	</section>
 
-	<!-- Modal JS -->
-	<script type="text/javascript" src="/js/modules/modal.js<?php echo $ver?>"></script>
-
 </div><!-- End: Buy Page -->
 
 
@@ -432,6 +389,8 @@ require_once __DIR__ . '/../inc/above.php';
 
 <?php require_once __DIR__ . '/../inc/below.php'; ?>
 
+<script type="text/javascript" src="/js/pages/buy/brochure-form.js<?= $ver ?>"></script>
+<script type="text/javascript" src="/js/pages/buy/masterplan-and-quotes-form.js<?= $ver ?>"></script>
 
 
 

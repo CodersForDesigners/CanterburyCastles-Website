@@ -18,55 +18,34 @@
 							<form class="js_contact_form ga_form" data-c="<?php echo $urlSlug ?? 'buy' ?>-enquire-now">
 								<div class="form-row space-min-bottom">
 									<label class="visuallyhidden">Name</label>
-									<input class="form-field input-large block" type="text" name="name" placeholder="Enter Full Name" data-name="name">
+									<input class="form-field input-large block" type="text" name="name" placeholder="Name" data-name="name">
 								</div>
-								<!-- <div class="form-row space-min-bottom">
-									<label class="visuallyhidden">Email</label>
-									<input class="form-field input-large block js_email" type="email" placeholder="Email">
-								</div> -->
 								<div class="phone-trap phone-number form-row space-min-bottom">
 									<label class="visuallyhidden">Mobile Number</label>
 									<div class="block prefix-group" style="position: relative">
 										<select class="form-field input-large block js_phone_country_code" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0">
 											<?php include __DIR__ . '/../inc/phone-country-codes.php' ?>
 										</select>
-										<input class="prefix js_phone_country_code_label button button-large input-text fill-dark" value="+91" style="pointer-events: none; width: 100%;">
+										<input class="prefix js_phone_country_code_label button button-large input-text fill-dark" value="+91" style="pointer-events: none; width: 100%;" readonly>
 									</div>
-									<input class="form-field input-large block" type="tel" name="phone-number" placeholder="Enter Mobile Number">
+									<input class="form-field input-large block" type="tel" name="phone-number" placeholder="Mobile Number">
+								</div>
+								<div class="form-row space-min-bottom">
+									<label class="visuallyhidden">Email</label>
+									<input class="form-field input-large block js_email" type="email" placeholder="Email">
 								</div>
 								<div class="form-row space-min-bottom">
 									<label class="visuallyhidden">Budget</label>
 									<select class="form-field input-large block" name="budget">
 										<option selected="" disabled="" value="" data-name="budget">Select Budget</option>
-										<option>Around Rs.30 Lakhs</option>
-										<option>Around Rs.60 Lakhs</option>
-										<option>Around Rs.90 Lakhs</option>
+										<option>Around 30 Lakhs</option>
+										<option>Around 60 Lakhs</option>
+										<option>Around 90 Lakhs</option>
 									</select>
 								</div>
 								<div class="form-row space-quarter-top">
 									<label class="visuallyhidden">Enquire Now</label>
-									<input class="button button-large block" type="submit" value="Enquire Now">
-								</div>
-							</form>
-
-							<!-- OTP form -->
-							<form class="js_otp_form" style="display: none;">
-								<div class="form-row columns small-12 _medium-6">
-									<div class="otp-trap">
-										<label class="block text-left">
-											<span class="label inline text-neutral-1 text-uppercase">Enter the OTP</span>
-											<input class="otp block" type="text" name="otp">
-										</label>
-										<label class="submit block">
-											<span class="invisible label inline text-neutral-1 text-uppercase">Submit</span>
-											<button class="button button-large block">Submit</button>
-										</label>
-									</div>
-								</div>
-								<br>
-								<div class="form-row columns small-12 clearfix hidden">
-									<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-left" tabindex="-1">Re-send OTP</div>
-									<div class="label strong text-neutral-1 opacity-50 text-uppercase inline-middle cursor-pointer float-right" tabindex="-1">Enter different number</div>
+									<button class="button button-large block" type="submit">Enquire Now</button>
 								</div>
 							</form>
 
@@ -183,47 +162,25 @@
 
 
 	<!-- JS Modules -->
+	<script type="text/javascript" src="/plugins/base64/base64.js__v3.7.2.min.js<?= $ver ?>"></script>
+	<script type="text/javascript" src="/plugins/js-cookie/js-cookie__v3.0.1.min.js<?= $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/utils.js<?= $ver ?>"></script>
 	<!-- <script type="text/javascript" src="/js/modules/device-charge.js<?= $ver ?>"></script> -->
 	<script type="text/javascript" src="/js/modules/menu.js<?= $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/video_embed.js<?= $ver ?>"></script>
 	<script type="text/javascript" src="/js/modules/modals.js<?= $ver ?>"></script>
-	<script type="text/javascript" src="/js/modules/form.js<?= $ver ?>"></script>
 	<!-- <script type="text/javascript" src="/js/modules/disclaimer.js"></script> -->
 
 	<script type="text/javascript" src="/js/modules/revealer.js<?= $ver ?>"></script>
 	<script type="text/javascript" src="/plugins/slick/slick.js"></script>
 
-	<script type="text/javascript" src="/js/modules/cupid/utils.js<?= $ver ?>"></script>
-	<script type="text/javascript" src="/js/modules/cupid/user.js<?= $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/cupid.js<?= $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/cupid-extensions.js<?= $ver ?>"></script>
 
-	<script type="text/javascript" src="/js/login-prompts.js<?= $ver ?>"></script>
-	<script type="text/javascript" src="/js/forms.js<?= $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/forms.js<?= $ver ?>"></script>
+	<script type="text/javascript" src="/js/modules/form-utils.js<?= $ver ?>"></script>
 
-	<script type="text/javascript">
-
-		/*
-		 *
-		 * Log the Person's Website Visit
-		 *
-		 */
-		$( function () {
-
-			var user = __CUPID.utils.getUser();
-			if ( user ) {
-				setTimeout( function () {
-					__CUPID.utils.getAnalyticsId()
-						.then( function ( deviceId ) {
-							user.hasDeviceId( deviceId );
-							var where = window.location.pathname;
-							user.isOnWebsite( where );
-						} )
-				}, 1500 );
-			}
-
-		} );
-
-	</script>
+	<script type="text/javascript" src="/js/pages/contact-form.js<?= $ver ?>"></script>
 
 	<!-- Other Modules -->
 	<?php // require __DIR__ . '/inc/can-user-hover.php' ?>
