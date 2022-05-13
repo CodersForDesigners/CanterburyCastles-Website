@@ -296,24 +296,24 @@ require_once __DIR__ . '/../inc/above.php';
 			<div class="plot-price column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h3 space-half-top space-quarter-bottom">Get a quotation for a plot</div>
 				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 886</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">1200sft</span> - North Facing - Plot Value <span class="strong text-yellow">24 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="886" data-c="buy-get-a-quote">get a quote</button></div>
+					<div class="columns inline-bottom small-12 large-3 h3">№ 626</div>
+					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">2101 sft</span> - West Facing -<br>Plot Value <span class="strong text-yellow">35 Lakhs</span></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="626" data-c="buy-get-a-quote">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 910</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">2594sft</span> - S-West Facing - Plot Value <span class="strong text-yellow">54 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="910" data-c="buy-get-a-quote">get a quote</button></div>
+					<div class="columns inline-bottom small-12 large-3 h3">№ 945</div>
+					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">2705 sft</span> - North Facing -<br>Plot Value <span class="strong text-yellow">54 Lakhs</span></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="945" data-c="buy-get-a-quote">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 902</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">3468sft</span> - N-West Facing - Plot Value <span class="strong text-yellow">73 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="902" data-c="buy-get-a-quote">get a quote</button></div>
+					<div class="columns inline-bottom small-12 large-3 h3">№ 477</div>
+					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">2126 sft</span> - East Facing -<br>Plot Value <span class="strong text-yellow">42.5 Lakhs</span></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="477" data-c="buy-get-a-quote">get a quote</button></div>
 				</div>
 				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 202</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">4104sft</span> - S-West Facing - Plot Value <span class="strong text-yellow">85 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="202" data-c="buy-get-a-quote">get a quote</button></div>
+					<div class="columns inline-bottom small-12 large-3 h3">№ 243</div>
+					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">4659 sft</span> - North Facing -<br>Plot Value <span class="strong text-yellow">93 Lakhs</span></div>
+					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="243" data-c="buy-get-a-quote">get a quote</button></div>
 				</div>
 			</div>
 			<div class="action-masterplan column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1 space-quarter-top">
