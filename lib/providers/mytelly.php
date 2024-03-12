@@ -19,9 +19,9 @@ class MyTelly {
 			$call[ 'missed' ] = false;
 			$call[ 'wasRouted' ] = true;
 			// The phone number of the agent who took the call
-			$call[ 'agentPhoneNumber' ] = $log[ 'attempted' ];
+			$call[ 'agentPhoneNumber' ] = $log[ 'connected_to' ];
 		}
-		else if ( empty( $log[ 'attempted' ] ) ) {
+		else if ( empty( $log[ 'connected_to' ] ) ) {
 			$call[ 'taken' ] = false;
 			$call[ 'missed' ] = false;
 			$call[ 'wasRouted' ] = false;
