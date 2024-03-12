@@ -6,7 +6,11 @@
  */
 require_once __DIR__ . '/../inc/above.php';
 
+
 // Page-specific preparatory code goes here.
+require_once __DIR__ . '/../content/featured-plots.php';
+require_once __DIR__ . '/../inc/plot-list-item.php';
+use function UI\Lib\{PlotListItem};
 
 ?>
 
@@ -295,31 +299,9 @@ require_once __DIR__ . '/../inc/above.php';
 		<div class="container row">
 			<div class="plot-price column large-5 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1">
 				<div class="title h3 space-half-top space-quarter-bottom">Get a quotation for a plot</div>
-				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 39</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">1200 sft</span> - West Facing -<br>Plot Value <span class="strong text-yellow">34.2 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="39" data-c="buy-get-a-quote">get a quote</button></div>
-				</div>
-				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 55</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">1200 sft</span> - West Facing -<br>Plot Value <span class="strong text-yellow">34.2 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="55" data-c="buy-get-a-quote">get a quote</button></div>
-				</div>
-				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 56</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">1200 sft</span> - West Facing -<br>Plot Value <span class="strong text-yellow">34.2 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="56" data-c="buy-get-a-quote">get a quote</button></div>
-				</div>
-				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 252</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">1258 sft</span> - West Facing -<br>Plot Value <span class="strong text-yellow">35.853 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="252" data-c="buy-get-a-quote">get a quote</button></div>
-				</div>
-				<div class="row space-min-bottom ">
-					<div class="columns inline-bottom small-12 large-3 h3">№ 268</div>
-					<div class="columns inline-bottom small-7 large-5 label text-uppercase"><span class="strong text-green">1174 sft</span> - West Facing -<br>Plot Value <span class="strong text-yellow">33.459 Lakhs</span></div>
-					<div class="columns inline-bottom small-5 large-4 xlarge-3 xlarge-offset-1"><button class="button fill-light block js_request_quote" data-unit="268" data-c="buy-get-a-quote">get a quote</button></div>
-				</div>
+				<?php foreach ( Content\FEATURED_PLOTS as $plot ) : ?>
+					<?php PlotListItem( $plot ) ?>
+				<?php endforeach ?>
 			</div>
 			<div class="action-masterplan column large-4 large-offset-1 medium-6 medium-offset-3 small-10 small-offset-1 space-quarter-top">
 				<img src="/media/action-masterplan-mockup.png<?php echo $ver?>">
